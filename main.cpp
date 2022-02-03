@@ -1,4 +1,7 @@
-
+//QLP File Generator for Gomoku game,
+//Gomoku is a type of a m,n,k game that is played in 15x15 board
+// Winning condition is 5 in a row
+// So Gomoku is 15,15,5 game
 
 #include <iostream>
 #include <fstream> //for writing to a file
@@ -25,11 +28,17 @@ int main() {
     int cntC1=0, cntC2=0, cntC3=0, cntC4=0, cntC5=0, cntC6=0, cntC7=0, cntC8=0, cntC9=0, cntC10=0; //Count for Third Set Auxiliary  Constraints
     int cntC11=0, cntC12=0, cntC13=0, cntC14=0, cntC15=0, cntC16=0, cntC17=0, cntC18=0, cntC19=0, cntC20=0; //Count for Second Set Auxiliary  Constraints
 
+    int cntD1=0, cntD2=0, cntD3=0, cntD4=0, cntD5=0, cntD6=0, cntD7=0, cntD8=0, cntD9=0, cntD10=0; //Count for Third Set Auxiliary  Constraints
+    int cntD11=0, cntD12=0, cntD13=0, cntD14=0, cntD15=0, cntD16=0, cntD17=0, cntD18=0, cntD19=0, cntD20=0; //Count for Second Set Auxiliary  Constraints
+
+    int cntE1=0, cntE2=0, cntE3=0, cntE4=0, cntE5=0, cntE6=0, cntE7=0, cntE8=0, cntE9=0, cntE10=0; //Count for Third Set Auxiliary  Constraints
+    int cntE11=0, cntE12=0, cntE13=0, cntE14=0, cntE15=0, cntE16=0, cntE17=0, cntE18=0, cntE19=0, cntE20=0; //Count for Second Set Auxiliary  Constraints
+
     int cntTemp=0;
     int i2=1; //Right-hand side of the equation 6.17
 
     myfile<< "MAXIMIZE"<<endl;
-    myfile<< "w9"<<endl;
+    myfile<< "w225"<<endl;
     myfile<< "SUBJECT TO"<<endl;
     myfile<< "\\\\Existential Constrains"<<endl;
     myfile<< " "<<endl;
@@ -1662,6 +1671,9 @@ int main() {
         myfile << endl;
     }
 
+
+    cntTemp=cntTemp+cntC1+cntC2+cntC3;
+
     myfile<< ""<<endl;
     myfile<< "\\\\========================================================================================================="<<endl;
     myfile<< "\\\\========================================================================================================="<<endl;
@@ -1691,8 +1703,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC4 = 0; cntC4 < 113; cntC4++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntTemp+cntC1+cntC2+cntC3+cntC4) + ": ";
+    for (cntD1 = 0; cntD1 < 112; cntD1++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntD1) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
                 myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
@@ -1700,7 +1712,7 @@ int main() {
                 myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
 
         }
-        myfile << " - w" + to_string(k-1) + " <= 2 ";
+        myfile << " - w" + to_string(k-1) + " <= 4 ";
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -1721,58 +1733,113 @@ int main() {
     myfile<< "\\\\========================================================================================================="<<endl;
     myfile<< ""<<endl;
 
+    myfile<<"\\\\Second Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<endl;
 
-//
-//    myfile<<endl;
-//    myfile<<"\\\\Second Set Auxiliary Constraint Set 6.19"<<endl;
-//    myfile<<endl;
-//
-//    i=2; //for the x coordinate of the board
-//    j=1; //for the y coordinate of the board
-//    k=2; //k value
-//    i2=1; //Right hand side of the equation
-//
-//    for (cntA11 = 0; cntA11 < 4; cntA11++) {  //Constraint Number Counter
-//        myfile << "A_constraint" + to_string(cntTemp+cntA7+cntA8+cntA9+cntA10+cntA11) + ": ";
-//        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-//            if (d==2)
-//                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
-//            else
-//                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
-//        }
-//        myfile << " - w" + to_string(k-1) + " <= 2 ";
-//        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
-//        i2++;
-//        myfile << endl;
-//    }
-//
-//
-//    myfile<<endl;
-//    myfile<<"\\\\Third Set Auxiliary Constraint Set 6.19"<<endl;
-//    myfile<<endl;
-//
-//    i=3; //for the x coordinate of the board
-//    j=1; //for the y coordinate of the board
-//    k=2; //k value
-//    i2=1; //Right hand side of the equation
-//
-//    for (cntA12 = 0; cntA12 < 4; cntA12++) {  //Constraint Number Counter
-//        myfile << "A_constraint" + to_string(cntTemp+cntA7+cntA8+cntA9+cntA10+cntA11+cntA12) + ": ";
-//        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-//            if (d==2)
-//                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
-//            else
-//                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
-//        }
-//        myfile << " - w" + to_string(k-1) + " <= 2 ";
-//        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
-//        i2++;
-//        myfile << endl;
-//    }
-//
-//
-//
-//    cntTemp=cntTemp+cntA7+cntA8+cntA9+cntA10+cntA11+cntA12;
+    i=2; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    i2=1; //Right hand side of the equation
+
+    for (cntD2 = 0; cntD2 < 112; cntD2++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2) + ": ";
+        for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
+            if (d==14)
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+
+        }
+        myfile << " - w" + to_string(k-1) + " <= 4 ";
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8...,224}
+        i2++;
+        myfile << endl;
+    }
+
+
+    myfile<< ""<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< ""<<endl;
+
+    myfile<<"\\\\Third Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<endl;
+
+    i=2; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    i2=1; //Right hand side of the equation
+
+    for (cntD3 = 0; cntD3 < 112; cntD3++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3) + ": ";
+        for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
+            if (d==14)
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+
+        }
+        myfile << " - w" + to_string(k-1) + " <= 4 ";
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8...,224}
+        i2++;
+        myfile << endl;
+    }
+
+
+    myfile<< ""<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< ""<<endl;
+
+    myfile<<"\\\\Fourth Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<endl;
+
+    i=2; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    i2=1; //Right hand side of the equation
+
+    for (cntC4 = 0; cntC4 < 112; cntC4++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4) + ": ";
+        for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
+            if (d==14)
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+
+        }
+        myfile << " - w" + to_string(k-1) + " <= 4 ";
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8...,224}
+        i2++;
+        myfile << endl;
+    }
+
+
+
+
+
+
+
+
+
 //
 //    myfile<<endl;
 //    myfile<<endl;
