@@ -149,85 +149,113 @@ int main() {
         myfile<<endl;
     }
 
-//
-//    /*
-//     * =====================================================================
-//     * =====================================================================
-//     * First Universal Constraint Set
-//   */
-//    myfile<< " "<<endl;
-//    myfile<< " "<<endl;
-//    myfile<< "\\\\========================================================================================================="<<endl;
-//    myfile<< "\\\\========================================================================================================="<<endl;
-//    myfile<< "\\\\========================================================================================================="<<endl;
-//    myfile<< " "<<endl;
-//    myfile<< " "<<endl;
-//    myfile<< "\\\\Universal Constraints"<<endl;
-//    myfile<< " "<<endl;
-//    myfile<<"\\\\First Constraint Set of Universal Player 6.14"<<endl;
-//    myfile<< endl;
-//
-//    i=1; //for the x coordinate of the board
-//    j=1; //for the y coordinate of the board
-//    k=2; //k value
-//
-//    for(cnt1=1 ; cnt1<25201;cnt1++)
-//    {
-//        //Printing
-//        myfile<< "U_constraint" + to_string(cnt1) +": ";
-//        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-1)+ " + ";
-//        myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 1"<< endl;
-//
-//        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
-//
-//        if (k==226 || k==227) // Since k ∈ {3,5,7,9}
-//        {
-//            k=2; //Resetting K value
-//            j=j+1; //Increasing J value
-//            myfile<<endl;
-//        }
-//        if (j==16)
-//        {
-//            j=1; //Resetting j value since board size is 3x3
-//            i=i+1; //Increasing i Value in each three step
-//        }
-//    }
-//
-///*
-// * Second Universal Constraint Set
-//*/
-//
-//    myfile<<"\\\\Second Constraint Set of Universal Player 6.15"<<endl;
-//    myfile<<endl;
-//
-//    i=1; //for the x coordinate of the board
-//    j=1;  //for the y coordinate of the board
-//    k=4; //k value
-//
-//    for (cnt2=0 ;cnt2<24975; cnt2++) //for 3x3 9 decrease, 15x15 225 decrease compared to initial Existential
-//    {
-//        //Printing
-//        myfile<< "U_constraint" + to_string(cnt1+cnt2) +": ";
-//        myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " - ";
-//        myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 0 "<< endl;
-//
-//        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
-//
-//        if (k==226 || k==227) // Since k ∈ {3,5,7,9}
-//        {
-//            k=4; //Resetting K value
-//            j=j+1; //Increasing J value
-//            myfile<<endl;
-//        }
-//        if (j==16)
-//        {
-//            j=1; //Resetting j value since board size is 3x3
-//            i=i+1; //Increasing i Value in each three step
-//        }
-//    }
-///*
-//* Third Universal Constraint Set
-//*/
+    myfile<< ""<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< ""<<endl;
+
+    /*
+     * =====================================================================
+     * =====================================================================
+     * First Universal Constraint Set
+   */
+    myfile<< " "<<endl;
+    myfile<< " "<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< " "<<endl;
+    myfile<< " "<<endl;
+    myfile<< "\\\\Universal Constraints"<<endl;
+    myfile<< " "<<endl;
+    myfile<<"\\\\First Constraint Set of Universal Player 6.14"<<endl;
+    myfile<< endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+
+    for(cnt1=1 ; cnt1<25201;cnt1++)
+    {
+        //Printing
+        myfile<< "U_constraint" + to_string(cnt1) +": ";
+        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-1)+ " + ";
+        myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 1"<< endl;
+
+        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
+
+        if (k==226 || k==227) // Since k ∈ {3,5,7,9}
+        {
+            k=2; //Resetting K value
+            j=j+1; //Increasing J value
+            myfile<<endl;
+        }
+        if (j==16)
+        {
+            j=1; //Resetting j value since board size is 3x3
+            i=i+1; //Increasing i Value in each three step
+        }
+    }
+
+
+
+    myfile<< ""<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< "\\\\========================================================================================================="<<endl;
+    myfile<< ""<<endl;
+/*
+ * Second Universal Constraint Set
+*/
+
+    myfile<<"\\\\Second Constraint Set of Universal Player 6.15"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1;  //for the y coordinate of the board
+    k=4; //k value
+
+    for (cnt2=0 ;cnt2<24975; cnt2++) //for 3x3 9 decrease, 15x15 225 decrease compared to initial Existential
+    {
+        //Printing
+        myfile<< "U_constraint" + to_string(cnt1+cnt2) +": ";
+        myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " - ";
+        myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 0 "<< endl;
+
+        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
+
+        if (k==226 || k==227) // Since k ∈ {3,5,7,9}
+        {
+            k=4; //Resetting K value
+            j=j+1; //Increasing J value
+            myfile<<endl;
+        }
+        if (j==16)
+        {
+            j=1; //Resetting j value since board size is 3x3
+            i=i+1; //Increasing i Value in each three step
+        }
+    }
+/*
+* Third Universal Constraint Set
+*/
 //
 //    myfile<<"\\\\Third Constraint Set of Universal Player 6.16 (Ai_j_k) "<<endl;
 //    myfile<<endl;
