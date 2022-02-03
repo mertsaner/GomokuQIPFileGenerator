@@ -1817,7 +1817,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC4 = 0; cntC4 < 112; cntC4++) {  //Constraint Number Counter
+    for (cntD4 = 0; cntD4 < 112; cntD4++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -1854,7 +1854,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC5 = 0; cntC5 < 112; cntC5++) {  //Constraint Number Counter
+    for (cntD5 = 0; cntD5 < 112; cntD5++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4+cntD5) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -1891,7 +1891,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC6 = 0; cntC6 < 112; cntC6++) {  //Constraint Number Counter
+    for (cntD6 = 0; cntD6 < 112; cntD6++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4+cntD5+cntD6) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -1928,7 +1928,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC7 = 0; cntC7 < 112; cntC7++) {  //Constraint Number Counter
+    for (cntD7 = 0; cntD7 < 112; cntD7++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4+cntD5+cntD6+cntD7) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -1965,7 +1965,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC8 = 0; cntC8 < 112; cntC8++) {  //Constraint Number Counter
+    for (cntD8 = 0; cntD8 < 112; cntD8++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4+cntD5+cntD6+cntD7+cntD8) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2002,7 +2002,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC9 = 0; cntC9 < 112; cntC9++) {  //Constraint Number Counter
+    for (cntD9 = 0; cntD9 < 112; cntD9++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4+cntD5+cntD6+cntD7+cntD8+cntD9) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2040,7 +2040,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC10 = 0; cntC10 < 112; cntC10++) {  //Constraint Number Counter
+    for (cntD10 = 0; cntD10 < 112; cntD10++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD1+cntD2+cntD3+cntD4+cntD5+cntD6+cntD7+cntD8+cntD9+cntD10) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2080,7 +2080,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC11 = 0; cntC11 < 112; cntC11++) {  //Constraint Number Counter
+    for (cntD11 = 0; cntD11 < 112; cntD11++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD11) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2118,7 +2118,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC12 = 0; cntC12 < 112; cntC12++) {  //Constraint Number Counter
+    for (cntD12 = 0; cntD12 < 112; cntD12++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD11+cntD12) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2157,7 +2157,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC10 = 0; cntC10 < 112; cntC10++) {  //Constraint Number Counter
+    for (cntD13 = 0; cntD13 < 112; cntD13++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD11+cntD12+cntD13) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2197,7 +2197,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC14 = 0; cntC14 < 112; cntC14++) {  //Constraint Number Counter
+    for (cntD14 = 0; cntD14 < 112; cntD14++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD11+cntD12+cntD13+cntD14) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2236,7 +2236,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntC15 = 0; cntC15 < 112; cntC15++) {  //Constraint Number Counter
+    for (cntD15 = 0; cntD15 < 112; cntD15++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp+cntD11+cntD12+cntD13+cntD14+cntD15) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==14)
@@ -2251,7 +2251,7 @@ int main() {
         myfile << endl;
     }
 
-    //cntTemp=cntTemp+cntD11+cntD12+cntD13+cntD14+cntD15;
+    cntTemp=cntTemp+cntD11+cntD12+cntD13+cntD14+cntD15;
 
 
 
@@ -2705,6 +2705,7 @@ int main() {
     myfile.close();
 
     cout<<"Writing is successful!"<<endl;
+    cout<<"CntTemp is: "+ to_string(cntTemp)<<endl;
     cout<<"Total number of constraint is " + to_string(count1+ count2+ count3+ cnt1 + cnt2 + cnt3+ cntTemp) <<endl;
 
     return 0;
