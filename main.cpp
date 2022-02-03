@@ -2144,16 +2144,6 @@ int main() {
         myfile << endl;
     }
 
-
-    myfile << "" << endl;
-
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
-    myfile << endl;
-    myfile << endl;
     myfile << "\\\\Auxiliary Constraint Set 6.19.4" << endl;
     myfile << endl;
 
@@ -2175,23 +2165,16 @@ int main() {
         i2++;
         myfile << endl;
     }
-
-
     cntTemp = cntTemp + cntF1 + cntF2;
 
-
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
 
 /*  Constraints set is finished
  * Final Part
  *
 */
     myfile << "BOUNDS" << endl;
-    myfile << endl;
-
-    myfile << "\\\\Bound Set for A" << endl;
+    //myfile << endl;
+   // myfile << "\\\\Bound Set for A" << endl;
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2208,13 +2191,7 @@ int main() {
         }
     }
 
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile << "" << endl;
-
-    myfile << "\\\\Bound Set for B" << endl;
-
+    //myfile << "\\\\Bound Set for B" << endl;
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2230,16 +2207,8 @@ int main() {
         }
     }
 
-
-
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile << "" << endl;
-
-
-    myfile << endl;
-    myfile << "\\\\Bound Set for h" << endl;
+   //myfile << endl;
+    //myfile << "\\\\Bound Set for h" << endl;
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2251,15 +2220,8 @@ int main() {
         k = k + 2;
     }
 
-
-
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
-    myfile << endl;
-    myfile << "\\\\Bound Set for v" << endl;
+    //myfile << endl;
+    //myfile << "\\\\Bound Set for v" << endl;
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2271,13 +2233,10 @@ int main() {
         k = k + 2;
     }
 
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile << "" << endl;
 
-    myfile << endl;
-    myfile << "\\\\Bound Set for d" << endl;
+   // myfile << endl;
+   // myfile << "\\\\Bound Set for d" << endl;
+
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2290,9 +2249,6 @@ int main() {
         k = 1;
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
 //    myfile << "" << endl;
 //    myfile << endl;
     myfile << "\\\\Bound Set for w" << endl;
@@ -2306,10 +2262,7 @@ int main() {
         k = k + 2;
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile << "" << endl;
-//    myfile << endl;
+
     myfile << "BINARIES" << endl;
 //    myfile << endl;
 //    myfile << "\\\\Defining Variable  A in the .qlp" << endl;
@@ -2328,10 +2281,6 @@ int main() {
         }
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile << "" << endl;
 //    myfile << "\\\\Defining Variable  B in the .qlp" << endl;
 //    myfile << "" << endl;
 
@@ -2349,12 +2298,9 @@ int main() {
         }
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile << "" << endl;
+
 //    myfile << "\\\\Defining Variable h in the .qlp" << endl;
-//    myfile << "" << endl;
+
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2366,11 +2312,8 @@ int main() {
         k = k + 2;
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
 //    myfile << "\\\\Defining Variable v in the .qlp" << endl;
-//    myfile << "" << endl;
+
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2382,11 +2325,9 @@ int main() {
         k = k + 2;
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-    myfile << "\\\\Defining Variable d in the .qlp" << endl;
-    myfile << "" << endl;
+
+  //  myfile << "\\\\Defining Variable d in the .qlp" << endl;
+  //  myfile << "" << endl;
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2399,11 +2340,9 @@ int main() {
         k = 1;
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-    myfile << "\\\\Defining Variable w in the .qlp" << endl;
-    myfile << "" << endl;
+
+  //  myfile << "\\\\Defining Variable w in the .qlp" << endl;
+   // myfile << "" << endl;
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2413,9 +2352,6 @@ int main() {
         k = k + 2;
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
     myfile << "EXISTS" << endl;
     //myfile << "\\\\ Same Structure with Binaries but B does exist here" << endl;
     //myfile << "\\\\Defining Variable  A in the .qlp" << endl;
@@ -2434,9 +2370,6 @@ int main() {
         }
     }
 
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
-//    myfile<<"\\\\==============================================================="<< endl;
 //    myfile << "\\\\Defining Variable h in the .qlp" << endl;
 //    myfile << "" << endl;
 
@@ -2450,10 +2383,6 @@ int main() {
         k = k + 2;
     }
 
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile << "" << endl;
     //myfile << "\\\\Defining Variable v in the .qlp" << endl;
     //myfile << "" << endl;
 
@@ -2467,9 +2396,6 @@ int main() {
         k = k + 2;
     }
 
-   // myfile<<"\\\\==============================================================="<< endl;
-   // myfile<<"\\\\==============================================================="<< endl;
-   // myfile<<"\\\\==============================================================="<< endl;
     //myfile << "\\\\Defining Variable d in the .qlp" << endl;
     //myfile << "" << endl;
 
@@ -2484,11 +2410,7 @@ int main() {
         k = 1;
     }
 
-    //myfile << "" << endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    myfile << "\\\\Defining Variable w in the .qlp" << endl;
+    //myfile << "\\\\Defining Variable w in the .qlp" << endl;
     //myfile << "" << endl;
 
     i = 1; //for the x coordinate of the board
@@ -2499,13 +2421,8 @@ int main() {
         k = k + 2;
     }
 
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile << "" << endl;
     myfile << "ALL" << endl;
     //myfile << "\\\\Defining Variable  B in the .qlp" << endl;
-    //myfile << "" << endl;
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2520,14 +2437,11 @@ int main() {
             }
         }
     }
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile<<"\\\\==============================================================="<< endl;
-    //myfile << "" << endl;
+
     myfile << "ORDER" << endl;
     //myfile << endl;
-
     //myfile << "\\\\Printing  A in the .qlp" << endl;
+
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2560,7 +2474,7 @@ int main() {
         myfile << " w" + to_string(k) + " ";
 }
     myfile<<endl;
-    myfile<<endl;
+
     //myfile<<"\\\\Total number of constraint is " + to_string(count1+ count2+ count3+ cnt1 + cnt2 + cnt3+ cntTemp) <<endl;
     myfile <<"END";   //End of the .qlp file Code
     myfile.close();
