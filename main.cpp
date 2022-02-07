@@ -2,7 +2,7 @@
 //Gomoku is a type of a m,n,k game that is played in 15x15 board
 // Winning condition is 5 in a row
 // So Gomoku is 15,15,5 game
-
+// This program creates .qlp file of the Gomoku game for QIP Solver
 #include <iostream>
 #include <fstream> //for writing to a file
 
@@ -16,29 +16,26 @@ int main() {
     int i = 1; //for the x coordinate of the board
     int j = 1; //for the y coordinate of the board
     int k = 3; //k value
-    int count1 = 0, count2 = 0, count3 = 0; //Counter for Existential Constraints
-    int cnt1 = 0, cnt2 = 0, cnt3 = 0; //Counter for Existential Constraints
+    int count1 = 0, count2 = 0, count3 = 0; //Counters for Constraints
+    int cnt1 = 0, cnt2 = 0, cnt3 = 0;
 
     int cntA1 = 0, cntA2 = 0, cntA3 = 0, cntA4 = 0, cntA5 = 0, cntA6 = 0, cntA7 = 0, cntA8 = 0, cntA9 = 0, cntA10 = 0; //Count for First Auxiliary  Constraints
-    int cntA11 = 0, cntA12 = 0, cntA13 = 0, cntA14 = 0, cntA15 = 0, cntA16 = 0, cntA17 = 0, cntA18 = 0, cntA19 = 0, cntA20 = 0;
+    int cntA11 = 0, cntA12 = 0, cntA13 = 0, cntA14 = 0, cntA15 = 0;
 
     int cntB1 = 0, cntB2 = 0, cntB3 = 0, cntB4 = 0, cntB5 = 0, cntB6 = 0, cntB7 = 0, cntB8 = 0, cntB9 = 0, cntB10 = 0; //Count for Second Set Auxiliary  Constraints
-    int cntB11 = 0, cntB12 = 0, cntB13 = 0, cntB14 = 0, cntB15 = 0, cntB16 = 0, cntB17 = 0, cntB18 = 0, cntB19 = 0, cntB20 = 0;
+    int cntB11 = 0, cntB12 = 0, cntB13 = 0, cntB14 = 0, cntB15 = 0;
 
-    int cntC1 = 0, cntC2 = 0, cntC3 = 0, cntC4 = 0, cntC5 = 0, cntC6 = 0, cntC7 = 0, cntC8 = 0, cntC9 = 0, cntC10 = 0; //Count for Third Set Auxiliary  Constraints
-    int cntC11 = 0, cntC12 = 0, cntC13 = 0, cntC14 = 0, cntC15 = 0, cntC16 = 0, cntC17 = 0, cntC18 = 0, cntC19 = 0, cntC20 = 0;
+    int cntC1 = 0, cntC2 = 0, cntC3 = 0;
 
     int cntD1 = 0, cntD2 = 0, cntD3 = 0, cntD4 = 0, cntD5 = 0, cntD6 = 0, cntD7 = 0, cntD8 = 0, cntD9 = 0, cntD10 = 0; //Count for Fourth Set Auxiliary  Constraints
-    int cntD11 = 0, cntD12 = 0, cntD13 = 0, cntD14 = 0, cntD15 = 0, cntD16 = 0, cntD17 = 0, cntD18 = 0, cntD19 = 0, cntD20 = 0;
+    int cntD11 = 0, cntD12 = 0, cntD13 = 0, cntD14 = 0, cntD15 = 0;
 
     int cntE1 = 0, cntE2 = 0, cntE3 = 0, cntE4 = 0, cntE5 = 0, cntE6 = 0, cntE7 = 0, cntE8 = 0, cntE9 = 0, cntE10 = 0; //Count for Fifth Set Auxiliary  Constraints
-    int cntE11 = 0, cntE12 = 0, cntE13 = 0, cntE14 = 0, cntE15 = 0, cntE16 = 0, cntE17 = 0, cntE18 = 0, cntE19 = 0, cntE20 = 0;
+    int cntE11 = 0, cntE12 = 0, cntE13 = 0, cntE14 = 0, cntE15 = 0;
 
-    int cntF1 = 0, cntF2 = 0, cntF3 = 0, cntF4 = 0, cntF5 = 0, cntF6 = 0, cntF7 = 0, cntF8 = 0, cntF9 = 0, cntF10 = 0; //Count for Sixth Set Auxiliary  Constraints
-    int cntF11 = 0, cntF12 = 0, cntF13 = 0, cntF14 = 0, cntF15 = 0, cntF16 = 0, cntF17 = 0, cntF18 = 0, cntF19 = 0, cntF20 = 0;
-
+    int cntF1 = 0, cntF2 = 0;
     int cntTemp = 0;
-    int i2 = 1; //Right-hand side of the equation 6.17
+    int i2 = 1;
 
     myfile << "MAXIMIZE" << endl;
     myfile << "w225" << endl;
@@ -702,7 +699,7 @@ int main() {
     k = 1; //k value
     i2 = 1; //Right hand side of the equation
 
-    for (cntB1 = 0; cntB1 < 113; cntB1++) {  //Constraint Number Counter
+    for (cntB2 = 0; cntB2 < 113; cntB2++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             if (d == 14)
@@ -1667,44 +1664,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
-    myfile << endl;
-    myfile << endl;
-    myfile << "\\\\Auxiliary Constraint Set 6.19.2" << endl;
-    myfile << endl;
-
-    i = 1; //for the x coordinate of the board
-    j = 1; //for the y coordinate of the board
-    k = 2; //k value
-    i2 = 1; //Right hand side of the equation
-
-    for (cntE1 = 0; cntE1 < 112; cntE1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntTemp + cntE1) + ": ";
-        for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
-            if (d == 14)
-                myfile << "B" + to_string(i + d) + "_" + to_string(j) + "_" + to_string(k);
-            else
-                myfile << "B" + to_string(i + d) + "_" + to_string(j) + "_" + to_string(k) + " + ";
-        }
-        myfile << " - w" + to_string(k - 1) + " <= 4 ";
-        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8,....}
-        i2++;
-        myfile << endl;
-    }
-
-
-
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Second Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1727,11 +1688,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
 
     myfile << "\\\\Third Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
@@ -1755,11 +1713,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
 
     myfile << "\\\\Fourth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
@@ -1783,13 +1738,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Fifth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1812,12 +1762,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Sixth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1840,13 +1786,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Seventh Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1869,12 +1810,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Eighth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1898,21 +1835,15 @@ int main() {
         myfile << endl;
     }
 
-
-    myfile << "" << endl;
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Nineth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
     i = 1; //for the x coordinate of the board
     j = 9; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE9 = 0; cntE9 < 112; cntE9++) {  //Constraint Number Counter
         myfile << "A_constraint" +
@@ -1929,13 +1860,8 @@ int main() {
         myfile << endl;
     }
 
-    myfile << "" << endl;
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Tenth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1960,15 +1886,10 @@ int main() {
         myfile << endl;
     }
 
-
     cntTemp = cntTemp + cntE1 + cntE2 + cntE3 + cntE4 + cntE5 + cntE6 + cntE7 + cntE8 + cntE9 + cntE10;
 
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Eleventh Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1991,14 +1912,8 @@ int main() {
         myfile << endl;
     }
 
-
-    myfile << "" << endl;
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Twelveth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -2021,14 +1936,8 @@ int main() {
         myfile << endl;
     }
 
-
-    myfile << "" << endl;
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Thirteenth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -2051,14 +1960,8 @@ int main() {
         myfile << endl;
     }
 
-
-    myfile << "" << endl;
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Fourteenth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -2081,14 +1984,8 @@ int main() {
         myfile << endl;
     }
 
-
-    myfile << "" << endl;
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Fifteenth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -2113,17 +2010,9 @@ int main() {
 
     cntTemp = cntTemp + cntE11 + cntE12 + cntE13 + cntE14 + cntE15;
 
-
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
-    myfile << endl;
     myfile << "\\\\Auxiliary Constraint Set 6.19.3" << endl;
-    myfile << endl;
-
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2166,7 +2055,6 @@ int main() {
         myfile << endl;
     }
     cntTemp = cntTemp + cntF1 + cntF2;
-
 
 /*  Constraints set is finished
  * Final Part
