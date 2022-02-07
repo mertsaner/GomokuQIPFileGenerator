@@ -1,5 +1,5 @@
 //QLP File Generator for Gomoku game,
-//Gomoku is a type of a m,n,k game that is played in 15x15 board
+//Gomoku is a type of m,n,k game that is played in 15x15 board
 // Winning condition is 5 in a row
 // So Gomoku is 15,15,5 game
 // This program creates .qlp file of the Gomoku game for QIP Solver
@@ -83,10 +83,8 @@ int main() {
         myfile << "E_constraint" + to_string(count1 + count2) + ": ";
         myfile << "A" + to_string(i) + "_" + to_string(j) + "_" + to_string(k - 2) + " - ";
         myfile << "A" + to_string(i) + "_" + to_string(j) + "_" + to_string(k) + " <= 0" << endl;
-
         k = k + 2; //Increase k value in each step, k ∈ {3,5,7,9,...225}
-
-
+        
         if (k == 226 || k == 227) // Since k ∈ {3,5,7,9,...225}
         {
             k = 3; //Resetting K value
@@ -104,15 +102,13 @@ int main() {
 /*
  * Third Existential Constraint Set
 */
-
     myfile << "\\\\Third Constraint Set of Existential Player 6.13 (Ai_j_k)" << endl;
     myfile << endl;
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-
-
+    
     for (count3 = 0; count3 < 113; count3++) { //Until 113 Means until 15x15= 225 with odd numbers
         myfile << "E_constraint" + to_string(count1 + count2 + count3) + ": ";
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
@@ -135,7 +131,6 @@ int main() {
      * =====================================================================
      * First Universal Constraint Set
    */
-
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
     myfile << "\\\\Universal Constraints" << endl;
@@ -171,7 +166,6 @@ int main() {
 /*
  * Second Universal Constraint Set
 */
-
     myfile << "\\\\Second Constraint Set of Universal Player 6.15" << endl;
     myfile << endl;
 
@@ -203,7 +197,6 @@ int main() {
 /*
 * Third Universal Constraint Set
 */
-
     myfile << "\\\\Third Constraint Set of Universal Player 6.16 (Ai_j_k) " << endl;
     myfile << endl;
 
@@ -229,10 +222,8 @@ int main() {
     }
 
 /*
- *=====================================================================
- *=====================================================================
  * First Auxiliary Variables Set
- *
+ * 
 */
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
@@ -242,7 +233,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
 
     for (cntA1 = 1; cntA1 < 114; cntA1++) {  //Constraint Number Counter
@@ -261,16 +252,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-
-    myfile << endl;
     myfile << "\\\\Second Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 2; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA2 = 0; cntA2 < 113; cntA2++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2) + ": ";
@@ -288,15 +276,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
     myfile << "\\\\Third Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 3; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA3 = 0; cntA3 < 113; cntA3++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3) + ": ";
@@ -315,16 +301,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-
-    myfile << endl;
     myfile << "\\\\Fourth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 4; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA4 = 0; cntA4 < 113; cntA4++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4) + ": ";
@@ -344,16 +327,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-
-    myfile << endl;
     myfile << "\\\\Fifth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 5; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA5 = 0; cntA5 < 113; cntA5++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5) + ": ";
@@ -372,15 +352,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
     myfile << "\\\\Sixth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 6; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA6 = 0; cntA6 < 113; cntA6++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6) + ": ";
@@ -400,16 +378,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-
-    myfile << endl;
     myfile << "\\\\Seventh Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 7; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA7 = 0; cntA7 < 113; cntA7++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7) + ": ";
@@ -428,15 +403,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
     myfile << "\\\\Eighth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 8; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA8 = 0; cntA8 < 113; cntA8++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7 + cntA8) + ": ";
@@ -455,15 +428,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
-    myfile << "\\\\Nineth Set of Auxiliary Constraint Set 6.17" << endl;
+    myfile << "\\\\Ninth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 9; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA9 = 0; cntA9 < 113; cntA9++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7 + cntA8 + cntA9) +
@@ -484,15 +455,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
     myfile << "\\\\Tenth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 10; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA10 = 0; cntA10 < 113; cntA10++) {  //Constraint Number Counter
         myfile << "A_constraint" +
@@ -510,19 +479,18 @@ int main() {
         myfile << endl;
     }
 
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     cntTemp = cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7 + cntA8 + cntA9 + cntA10;
-    myfile << endl;
+
+
+    myfile<<"\\\\==============================================================="<< endl;
+    myfile<<"\\\\==============================================================="<< endl;
     myfile << "\\\\Eleventh Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 11; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA11 = 0; cntA11 < 113; cntA11++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntA11) + ": ";
@@ -542,15 +510,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
     myfile << "\\\\Twelveth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 12; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA12 = 0; cntA12 < 113; cntA12++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntA11 + cntA12) + ": ";
@@ -569,16 +535,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-    myfile << endl;
     myfile << "\\\\Thirteenth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 13; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA13 = 0; cntA13 < 113; cntA13++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntA11 + cntA12 + cntA13) + ": ";
@@ -597,15 +560,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
     myfile << "\\\\Fourteenth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 14; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA14 = 0; cntA14 < 113; cntA14++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntA11 + cntA12 + cntA13 + cntA14) + ": ";
@@ -624,14 +585,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
     myfile << "\\\\Fifteenth Set of Auxiliary Constraint Set 6.17" << endl;
     myfile << endl;
 
     i = 15; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntA15 = 0; cntA15 < 113; cntA15++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntA11 + cntA12 + cntA13 + cntA14 + cntA15) + ": ";
@@ -648,19 +608,12 @@ int main() {
         myfile << endl;
     }
 
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
+    cntTemp = cntTemp + cntA11 + cntA12 + cntA13 + cntA14 + cntA15;
 
-    /*
- *=====================================================================
- *=====================================================================
+/*
  * Second Auxiliary Variables Set (6.17.2)
  *
 */
-    cntTemp = cntTemp + cntA11 + cntA12 + cntA13 + cntA14 + cntA15;
-
-    myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
     myfile << "\\\\First Set of Second Auxiliary Constraint Set, (6.17.2)" << endl;
@@ -669,7 +622,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB1 = 0; cntB1 < 113; cntB1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1) + ": ";
@@ -688,16 +641,13 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile<<"\\\\==============================================================="<< endl;
-
-
     myfile << "\\\\Second Set of Second Auxiliary Constraint Set, (6.17.2)" << endl;
     myfile << endl;
 
     i = 1; //for the x coordinate of the board
     j = 2; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB2 = 0; cntB2 < 113; cntB2++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2) + ": ";
@@ -726,7 +676,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 3; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB3 = 0; cntB3 < 113; cntB3++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2 + cntB3) + ": ";
@@ -755,7 +705,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 4; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB4 = 0; cntB4 < 113; cntB4++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2 + cntB3 + cntB4) + ": ";
@@ -784,7 +734,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 5; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB5 = 0; cntB5 < 113; cntB5++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2 + cntB3 + cntB4 + cntB5) + ": ";
@@ -813,7 +763,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 6; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB6 = 0; cntB6 < 113; cntB6++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2 + cntB3 + cntB4 + cntB5 + cntB6) + ": ";
@@ -842,7 +792,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 7; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB7 = 0; cntB7 < 113; cntB7++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2 + cntB3 + cntB4 + cntB5 + cntB6 + cntB7) + ": ";
@@ -865,13 +815,13 @@ int main() {
     myfile<<"\\\\==============================================================="<< endl;
 
 
-    myfile << "\\\\Eigth Set of Second Auxiliary Constraint Set, (6.17.2)" << endl;
+    myfile << "\\\\Eighth Set of Second Auxiliary Constraint Set, (6.17.2)" << endl;
     myfile << endl;
 
     i = 1; //for the x coordinate of the board
     j = 8; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB8 = 0; cntB8 < 113; cntB8++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB1 + cntB2 + cntB3 + cntB4 + cntB5 + cntB6 + cntB7 + cntB8) +
@@ -902,7 +852,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 9; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB9 = 0; cntB9 < 113; cntB9++) {  //Constraint Number Counter
         myfile << "A_constraint" +
@@ -932,7 +882,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 10; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB10 = 0; cntB10 < 113; cntB10++) {  //Constraint Number Counter
         myfile << "A_constraint" +
@@ -966,7 +916,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 11; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB11 = 0; cntB11 < 113; cntB11++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB11) + ": ";
@@ -995,7 +945,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 12; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB12 = 0; cntB12 < 113; cntB12++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB11 + cntB12) + ": ";
@@ -1024,7 +974,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 13; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB13 = 0; cntB13 < 113; cntB13++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB11 + cntB12 + cntB13) + ": ";
@@ -1052,7 +1002,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 14; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB14 = 0; cntB14 < 113; cntB14++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB11 + cntB12 + cntB13 + cntB14) + ": ";
@@ -1081,7 +1031,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 15; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntB15 = 0; cntB15 < 113; cntB15++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntB11 + cntB12 + cntB13 + cntB14 + cntB15) + ": ";
@@ -1110,7 +1060,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntC1 = 0; cntC1 < 113; cntC1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntC1) + ": ";
@@ -1137,7 +1087,7 @@ int main() {
     i = 0; //for the x coordinate of the board
     j = 0; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntC2 = 0; cntC2 < 113; cntC2++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntC1 + cntC2) + ": ";
@@ -1164,17 +1114,17 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
     for (cntC3 = 0; cntC3 < 113; cntC3++) { //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntC1 + cntC2 + cntC3) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 15; e++) {
 
-                if (d == 0) { //Printing as much as required given by the equation
+                if (d == 0) { //Printing as much as given by the equation
                     myfile << "h" + to_string(i + e) + "__" + "_" + to_string(k) + " + ";
-                } else if (d == 1) { //Printing as much as required given by the equation
+                } else if (d == 1) { //Printing as much as required by the equation
                     myfile << "v__" + to_string(i + e) + "_" + to_string(k) + " + ";
-                } else if (d == 2) { //Printing as much as required given by the equation
+                } else if (d == 2) { //Printing as much as required by the equation
                     if (e != 0 && e != 1) //Printing only twice
                         continue;
                     else {
@@ -1209,7 +1159,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD1 = 0; cntD1 < 112; cntD1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1) + ": ";
@@ -1238,7 +1188,7 @@ int main() {
     i = 2; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD2 = 0; cntD2 < 112; cntD2++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1 + cntD2) + ": ";
@@ -1267,7 +1217,7 @@ int main() {
     i = 3; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD3 = 0; cntD3 < 112; cntD3++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1 + cntD2 + cntD3) + ": ";
@@ -1295,7 +1245,7 @@ int main() {
     i = 4; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD4 = 0; cntD4 < 112; cntD4++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1 + cntD2 + cntD3 + cntD4) + ": ";
@@ -1323,7 +1273,7 @@ int main() {
     i = 5; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD5 = 0; cntD5 < 112; cntD5++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1 + cntD2 + cntD3 + cntD4 + cntD5) + ": ";
@@ -1350,7 +1300,7 @@ int main() {
     i = 6; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD6 = 0; cntD6 < 112; cntD6++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1 + cntD2 + cntD3 + cntD4 + cntD5 + cntD6) + ": ";
@@ -1378,7 +1328,7 @@ int main() {
     i = 7; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD7 = 0; cntD7 < 112; cntD7++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1 + cntD2 + cntD3 + cntD4 + cntD5 + cntD6 + cntD7) + ": ";
@@ -1406,7 +1356,7 @@ int main() {
     i = 8; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD8 = 0; cntD8 < 112; cntD8++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD1 + cntD2 + cntD3 + cntD4 + cntD5 + cntD6 + cntD7 + cntD8) +
@@ -1429,13 +1379,13 @@ int main() {
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
 
-    myfile << "\\\\Nineth Set Auxiliary Constraint Set 6.19" << endl;
+    myfile << "\\\\Ninth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
     i = 9; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD9 = 0; cntD9 < 112; cntD9++) {  //Constraint Number Counter
         myfile << "A_constraint" +
@@ -1465,7 +1415,7 @@ int main() {
     i = 10; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD10 = 0; cntD10 < 112; cntD10++) {  //Constraint Number Counter
         myfile << "A_constraint" +
@@ -1498,7 +1448,7 @@ int main() {
     i = 11; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD11 = 0; cntD11 < 112; cntD11++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD11) + ": ";
@@ -1527,7 +1477,7 @@ int main() {
     i = 12; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD12 = 0; cntD12 < 112; cntD12++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD11 + cntD12) + ": ";
@@ -1556,7 +1506,7 @@ int main() {
     i = 13; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD13 = 0; cntD13 < 112; cntD13++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD11 + cntD12 + cntD13) + ": ";
@@ -1585,7 +1535,7 @@ int main() {
     i = 14; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD14 = 0; cntD14 < 112; cntD14++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD11 + cntD12 + cntD13 + cntD14) + ": ";
@@ -1614,7 +1564,7 @@ int main() {
     i = 15; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntD15 = 0; cntD15 < 112; cntD15++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntD11 + cntD12 + cntD13 + cntD14 + cntD15) + ": ";
@@ -1648,7 +1598,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE1 = 0; cntE1 < 112; cntE1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1) + ": ";
@@ -1672,7 +1622,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 2; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE2 = 0; cntE2 < 112; cntE2++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1 + cntE2) + ": ";
@@ -1697,7 +1647,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 3; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE3 = 0; cntE3 < 112; cntE3++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1 + cntE2 + cntE3) + ": ";
@@ -1722,7 +1672,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 4; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE4 = 0; cntE4 < 112; cntE4++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1 + cntE2 + cntE3 + cntE4) + ": ";
@@ -1746,7 +1696,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 5; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE5 = 0; cntE5 < 112; cntE5++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1 + cntE2 + cntE3 + cntE4 + cntE5) + ": ";
@@ -1770,7 +1720,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 6; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE6 = 0; cntE6 < 112; cntE6++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1 + cntE2 + cntE3 + cntE4 + cntE5 + cntE6) + ": ";
@@ -1794,7 +1744,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 7; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE7 = 0; cntE7 < 112; cntE7++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1 + cntE2 + cntE3 + cntE4 + cntE5 + cntE6 + cntE7) + ": ";
@@ -1818,7 +1768,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 8; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE8 = 0; cntE8 < 112; cntE8++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE1 + cntE2 + cntE3 + cntE4 + cntE5 + cntE6 + cntE7 + cntE8) +
@@ -1837,7 +1787,7 @@ int main() {
 
     myfile<<"\\\\==============================================================="<< endl;
     myfile<<"\\\\==============================================================="<< endl;
-    myfile << "\\\\Nineth Set of Auxiliary Constraint Set 6.19.2" << endl;
+    myfile << "\\\\Ninth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
     i = 1; //for the x coordinate of the board
@@ -1868,7 +1818,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 10; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE10 = 0; cntE10 < 112; cntE10++) {  //Constraint Number Counter
         myfile << "A_constraint" +
@@ -1896,7 +1846,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 11; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE11 = 0; cntE11 < 112; cntE11++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE11) + ": ";
@@ -1920,7 +1870,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 12; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE12 = 0; cntE12 < 112; cntE12++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE11 + cntE12) + ": ";
@@ -1944,7 +1894,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 13; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE13 = 0; cntE13 < 112; cntE13++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE11 + cntE12 + cntE13) + ": ";
@@ -1968,7 +1918,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 14; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE14 = 0; cntE14 < 112; cntE14++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE11 + cntE12 + cntE13 + cntE14) + ": ";
@@ -1992,7 +1942,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 15; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntE15 = 0; cntE15 < 112; cntE15++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntE11 + cntE12 + cntE13 + cntE14 + cntE15) + ": ";
@@ -2017,7 +1967,7 @@ int main() {
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntF1 = 0; cntF1 < 112; cntF1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntF1) + ": ";
@@ -2039,7 +1989,7 @@ int main() {
     i = 0; //for the x coordinate of the board
     j = 0; //for the y coordinate of the board
     k = 2; //k value
-    i2 = 1; //Right hand side of the equation
+    i2 = 1; //Right-hand side of the equation
 
     for (cntF2 = 0; cntF2 < 112; cntF2++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntTemp + cntF1 + cntF2) + ": ";
@@ -2061,8 +2011,7 @@ int main() {
  *
 */
     myfile << "BOUNDS" << endl;
-    //myfile << endl;
-   // myfile << "\\\\Bound Set for A" << endl;
+   //Bound Set for A
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2079,7 +2028,7 @@ int main() {
         }
     }
 
-    //myfile << "\\\\Bound Set for B" << endl;
+    //Bound Set for B
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2095,8 +2044,7 @@ int main() {
         }
     }
 
-   //myfile << endl;
-    //myfile << "\\\\Bound Set for h" << endl;
+    //Bound Set for h
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2108,8 +2056,7 @@ int main() {
         k = k + 2;
     }
 
-    //myfile << endl;
-    //myfile << "\\\\Bound Set for v" << endl;
+    //Bound Set for v
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2121,9 +2068,7 @@ int main() {
         k = k + 2;
     }
 
-
-   // myfile << endl;
-   // myfile << "\\\\Bound Set for d" << endl;
+   //Bound Set for d
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2137,9 +2082,7 @@ int main() {
         k = 1;
     }
 
-//    myfile << "" << endl;
-//    myfile << endl;
-    myfile << "\\\\Bound Set for w" << endl;
+    //Bound Set for w
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2152,8 +2095,7 @@ int main() {
 
 
     myfile << "BINARIES" << endl;
-//    myfile << endl;
-//    myfile << "\\\\Defining Variable  A in the .qlp" << endl;
+    //Defining Variable  A in the .qlp
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2169,9 +2111,7 @@ int main() {
         }
     }
 
-//    myfile << "\\\\Defining Variable  B in the .qlp" << endl;
-//    myfile << "" << endl;
-
+    //Defining Variable  B in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2187,9 +2127,7 @@ int main() {
     }
 
 
-//    myfile << "\\\\Defining Variable h in the .qlp" << endl;
-
-
+    //Defining Variable h in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2200,9 +2138,7 @@ int main() {
         k = k + 2;
     }
 
-//    myfile << "\\\\Defining Variable v in the .qlp" << endl;
-
-
+    //Defining Variable v in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2214,9 +2150,7 @@ int main() {
     }
 
 
-  //  myfile << "\\\\Defining Variable d in the .qlp" << endl;
-  //  myfile << "" << endl;
-
+    //Defining Variable d in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2229,9 +2163,7 @@ int main() {
     }
 
 
-  //  myfile << "\\\\Defining Variable w in the .qlp" << endl;
-   // myfile << "" << endl;
-
+    //Defining Variable w in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2241,8 +2173,8 @@ int main() {
     }
 
     myfile << "EXISTS" << endl;
-    //myfile << "\\\\ Same Structure with Binaries but B does exist here" << endl;
-    //myfile << "\\\\Defining Variable  A in the .qlp" << endl;
+    //ame Structure with Binaries but B does exist here
+    //Defining Variable  A in the .qlp
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2258,9 +2190,7 @@ int main() {
         }
     }
 
-//    myfile << "\\\\Defining Variable h in the .qlp" << endl;
-//    myfile << "" << endl;
-
+    //Defining Variable h in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2271,9 +2201,7 @@ int main() {
         k = k + 2;
     }
 
-    //myfile << "\\\\Defining Variable v in the .qlp" << endl;
-    //myfile << "" << endl;
-
+    //Defining Variable v in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2284,9 +2212,7 @@ int main() {
         k = k + 2;
     }
 
-    //myfile << "\\\\Defining Variable d in the .qlp" << endl;
-    //myfile << "" << endl;
-
+    //Defining Variable d in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2298,9 +2224,7 @@ int main() {
         k = 1;
     }
 
-    //myfile << "\\\\Defining Variable w in the .qlp" << endl;
-    //myfile << "" << endl;
-
+    //Defining Variable w in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -2310,7 +2234,7 @@ int main() {
     }
 
     myfile << "ALL" << endl;
-    //myfile << "\\\\Defining Variable  B in the .qlp" << endl;
+    //Defining Variable  B in the .qlp
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2327,8 +2251,7 @@ int main() {
     }
 
     myfile << "ORDER" << endl;
-    //myfile << endl;
-    //myfile << "\\\\Printing  A in the .qlp" << endl;
+    //Printing  A in the .qlp
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2342,22 +2265,22 @@ int main() {
                 z = z + 1;
                 }
             }
-        i = 1; //for the  xcoordinate of the board
+        i = 1; //for the x coordinate of the board
         j = 1; //for the y coordinate of the board
         for (int e = 0; e < 15; e++) {
             myfile << " h" + to_string(i + e) + "___" + to_string(k) + " ";
         }
-        i = 1; //for the  xcoordinate of the board
+        i = 1; //for the x coordinate of the board
         j = 1; //for the y coordinate of the board
         for (int e = 0; e < 15; e++) {
             myfile << " v__" + to_string(i + e) + "_" + to_string(k) + " ";
         }
-        i = 1; //for the  xcoordinate of the board
+        i = 1; //for the x coordinate of the board
         j = 1; //for the y coordinate of the board
         for (int d = 1; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             myfile << " d" + to_string(d) + "_" + to_string(k) + " ";
         }
-        i = 1; //for the  xcoordinate of the board
+        i = 1; //for the x coordinate of the board
         j = 1; //for the y coordinate of the board
         myfile << " w" + to_string(k) + " ";
 }
