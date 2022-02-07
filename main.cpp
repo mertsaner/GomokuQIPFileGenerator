@@ -207,7 +207,7 @@ int main() {
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 15; e++) {
 
-                if (e == 2 && d == 2) //This Helps to delete last sum symbol at the end of the equation
+                if (e == 14 && d == 14) //This Helps to delete last sum symbol at the end of the equation
                 {
                     myfile << "B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
                 } else
