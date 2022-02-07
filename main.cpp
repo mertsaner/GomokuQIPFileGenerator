@@ -1939,7 +1939,6 @@ int main() {
     }
 
    //Bound Set for d
-
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -1953,7 +1952,6 @@ int main() {
     }
 
     //Bound Set for w
-
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
     k = 1; //k value
@@ -1962,7 +1960,6 @@ int main() {
         myfile << endl;
         k = k + 2;
     }
-
 
     myfile << "BINARIES" << endl;
     //Defining Variable  A in the .qlp
@@ -1996,7 +1993,6 @@ int main() {
         }
     }
 
-
     //Defining Variable h in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2019,7 +2015,6 @@ int main() {
         k = k + 2;
     }
 
-
     //Defining Variable d in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2032,7 +2027,6 @@ int main() {
         k = 1;
     }
 
-
     //Defining Variable w in the .qlp
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -2043,7 +2037,7 @@ int main() {
     }
 
     myfile << "EXISTS" << endl;
-    //ame Structure with Binaries but B does exist here
+    //Same Structure with Binaries but B does exist here
     //Defining Variable  A in the .qlp
 
     i = 1; //for the x coordinate of the board
