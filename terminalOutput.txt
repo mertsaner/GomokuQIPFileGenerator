@@ -1,6 +1,6 @@
-mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX gomoku.qlp
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX gomoku.qlp 
 Yasol
 gomoku.qlp
 terminate called after throwing an instance of 'utils::ParserException'
-  what():  �D�
+  what():  PtN
 Aborted (core dumped)
