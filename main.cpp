@@ -179,7 +179,6 @@ int main() {
         myfile << "B" + to_string(i) + "_" + to_string(j) + "_" + to_string(k) + " <= 0 " << endl;
 
         k = k + 2; //Increase k value in each step, k ∈ {3,5,7,9}
-
         if (k == 226 || k == 227) // Since k ∈ {3,5,7,9}
         {
             k = 4; //Resetting K value
