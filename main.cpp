@@ -915,12 +915,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
-
     myfile << "\\\\Thirteenth Set of Second Auxiliary Constraint Set, (6.17.2)" << endl;
     myfile << endl;
 
@@ -946,9 +942,6 @@ int main() {
 
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
-
     myfile << "\\\\Fourteenth Set of Second Auxiliary Constraint Set, (6.17.2)" << endl;
     myfile << endl;
 
@@ -972,12 +965,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
-
     myfile << "\\\\Fifteenth Set of Second Auxiliary Constraint Set, (6.17.2)" << endl;
     myfile << endl;
 
@@ -1005,10 +994,8 @@ int main() {
 
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
     myfile << "\\\\First Set of Third Auxiliary Constraint Set 6.17.3" << endl;
     myfile << endl;
-
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -1029,13 +1016,10 @@ int main() {
         myfile << endl;
     }
 
-
-    myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
     myfile << "\\\\First Set of Fourth Auxiliary Constraint Set  6.17.4" << endl;
     myfile << endl;
-
 
     i = 0; //for the x coordinate of the board
     j = 0; //for the y coordinate of the board
@@ -1056,13 +1040,9 @@ int main() {
         myfile << endl;
     }
 
-
-
-    myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
     myfile << "\\\\First Set of Second Auxiliary Constraint Set 6.18 " << endl;
-
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
@@ -1097,15 +1077,10 @@ int main() {
         myfile << endl;
     }
 
-
     cntTemp = cntTemp + cntC1 + cntC2 + cntC3;
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-    myfile << endl;
-    myfile << endl;
     myfile << "\\\\First Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1129,12 +1104,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Second Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1158,12 +1129,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Third Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1187,11 +1154,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Fourth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1215,11 +1179,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Fifth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1245,8 +1206,6 @@ int main() {
 
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Sixth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1270,11 +1229,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Seventh Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1298,11 +1254,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Eighth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1327,11 +1280,8 @@ int main() {
         myfile << endl;
     }
 
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Ninth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1356,12 +1306,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Tenth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1389,12 +1335,8 @@ int main() {
 
     cntTemp = cntTemp + cntD1 + cntD2 + cntD3 + cntD4 + cntD5 + cntD6 + cntD7 + cntD8 + cntD9 + cntD10;
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Eleventh Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1418,12 +1360,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Twelfth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1447,12 +1385,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Thirteenth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1476,12 +1410,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Fourteenth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1505,12 +1435,8 @@ int main() {
         myfile << endl;
     }
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Fifteenth Set Auxiliary Constraint Set 6.19" << endl;
     myfile << endl;
 
@@ -1536,15 +1462,8 @@ int main() {
 
     cntTemp = cntTemp + cntD11 + cntD12 + cntD13 + cntD14 + cntD15;
 
-
-
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile<<"\\\\===================================================="<< endl;
-
-
-    myfile << endl;
-    myfile << endl;
     myfile << "\\\\Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1593,7 +1512,6 @@ int main() {
 
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Third Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
@@ -1618,7 +1536,6 @@ int main() {
 
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-
     myfile << "\\\\Fourth Set of Auxiliary Constraint Set 6.19.2" << endl;
     myfile << endl;
 
