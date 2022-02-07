@@ -41,7 +41,6 @@ int main() {
     myfile << "w225" << endl;
     myfile << "SUBJECT TO" << endl;
     myfile << "\\\\Existential Constrains" << endl;
-    myfile << " " << endl;
     /*
      * First Existential Constraint Set
    */
@@ -2285,7 +2284,6 @@ int main() {
         myfile << " w" + to_string(k) + " ";
 }
     myfile<<endl;
-
     //myfile<<"\\\\Total number of constraint is " + to_string(count1+ count2+ count3+ cnt1 + cnt2 + cnt3+ cntTemp) <<endl;
     myfile <<"END";   //End of the .qlp file Code
     myfile.close();
