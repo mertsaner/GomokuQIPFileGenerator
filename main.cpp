@@ -2019,7 +2019,7 @@ int main() {
     int z = 1;
     for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 15; e++) {
-            for (int z = 1; z < 226; z++) {
+            for (z = 1; z < 226; z++) {
 
                 myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(z) + " <= 1";
                 myfile << endl;
@@ -2035,7 +2035,7 @@ int main() {
     z = 2;
     for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 15; e++) {
-            for (int z = 2; z < 226; z++) {
+            for (z = 2; z < 226; z++) {
 
                 myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(z) + " <= 1";
                 myfile << endl;
@@ -2103,7 +2103,7 @@ int main() {
     z = 1;
     for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 15; e++) {
-            for (int z = 1; z < 226; z++) {
+            for (z = 1; z < 226; z++) {
 
                 myfile << " A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(z) + " ";
                 z = z + 1;
@@ -2118,7 +2118,7 @@ int main() {
     z = 2;
     for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 15; e++) {
-            for (int z = 2; z < 226; z++) {
+            for (z = 2; z < 226; z++) {
 
                 myfile << " B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(z) + " ";
                 z = z + 1;
@@ -2182,7 +2182,7 @@ int main() {
     z = 1;
     for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 15; e++) {
-            for (int z = 1; z < 226; z++) {
+            for (z = 1; z < 226; z++) {
 
                 myfile << " A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(z) + " ";
                 z = z + 1;
@@ -2242,7 +2242,7 @@ int main() {
     z = 2;
     for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 15; e++) {
-            for (int z = 2; z < 226; z++) {
+            for (z = 2; z < 226; z++) {
 
                 myfile << " B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(z) + " ";
                 z = z + 1;
@@ -2258,7 +2258,7 @@ int main() {
     k = 1; //k value
     z = 1;
 
-    for (int k = 1; k < 226; k++) { //Two nested For loops Represents increase in i  and j value
+    for (k = 1; k < 226; k++) { //Two nested For loops Represents increase in i  and j value
         for (int d = 0; d < 15; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 15; e++) {
                 myfile << " A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " ";
