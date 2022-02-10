@@ -1,0 +1,43 @@
+msaner@opt120:~/Schreibtisch/as2/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX gomoku.qlp
+Yasol
+gomoku.qlp
+InfoLevel is = 1
+DO makeBinary
+QLP ready
+Hashtable ready
+Variables ready
+Blocks:225
+C-Blocks:3 Stages:1
+Objective ready
+Found universal constraint.
+Found universal constraint that contains universal variables of more than one block!
+Constraints ready
+Reading input finished
+Objective Shift = 0
+learnDualCuts=1
+useGMI=1
+useCover=1
+usePump=1
+useShadow=1
+useLazyLP=1
+useFarJumping=1
+useFastFix=0
+useImplications=1
+useLimitedLP=1
+useStrongBranching=1
+useEarlyBackjump=1
+useBestLevelExtraction=1
+useUniversalBackjump=1
+maxBaCLevel=1000000
+useAlphabeta=1
+useScout=0
+useMonotones=1
+isSimplyRestricted=1
+writeOutputFile=0
+maintainPv=1
+solve initial LP ...
+correction I
+finished initial LP. lp-val=-1811.4000000000005 sol.size=0 feas:4
+Warning: Initial LP not adequately solved.
+..... 163 ..... score: -2.305843009213694e+18 | time: 100 |  dual: 1 gap=100%
+..... 209 ..... score: -2.305843009213694e+18 | time: 130 |  dual: 1 gap=100%
