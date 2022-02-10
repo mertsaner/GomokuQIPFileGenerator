@@ -43,3 +43,4 @@ Warning: Initial LP not adequately solved.
 ..... 173 ..... score: -2.305843009213694e+18 | time: 132 |  dual: 1 gap=100%
 ..... 101 ..... score: -2.305843009213694e+18 | time: 162 |  dual: 1 gap=100%
 ..... 275 ..... score: -2.305843009213694e+18 | time: 192 |  dual: 1 gap=100%
+..... 303 ..... score: -2.305843009213694e+18 | time: 222 |  dual: 1 gap=100%
