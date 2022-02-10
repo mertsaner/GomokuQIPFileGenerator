@@ -40,3 +40,5 @@ correction I
 finished initial LP. lp-val=-1811.4000000000005 sol.size=0 feas:4
 Warning: Initial LP not adequately solved.
 ..... 216 ..... score: -2.305843009213694e+18 | time: 102 |  dual: 1 gap=100%
+..... 85 ..... score: -2.305843009213694e+18 | time: 132 |  dual: 1 gap=100%
+..... 286 ..... score: -2.305843009213694e+18 | time: 162 |  dual: 1 gap=100%
