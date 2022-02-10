@@ -1,4 +1,4 @@
-mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX gomoku.qlp
+msaner@opt120:~/Schreibtisch/as/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX gomoku.qlp
 Yasol
 gomoku.qlp
 InfoLevel is = 1
@@ -33,10 +33,7 @@ useAlphabeta=1
 useScout=0
 useMonotones=1
 isSimplyRestricted=1
-writeOutputFile=1
+writeOutputFile=0
 maintainPv=1
 solve initial LP ...
-Exception caught solving model. Error Code: 1016
-finished initial LP. lp-val=inf sol.size=0 feas:7
-Warning: Initial LP not adequately solved.
-Killed
+correction I
