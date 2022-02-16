@@ -1041,7 +1041,7 @@ int main() {
 
     myfile<<"\\\\===================================================="<< endl;
     myfile<<"\\\\===================================================="<< endl;
-    myfile << "\\\\First Set of Second Auxiliary Constraint Set 6.18 " << endl;
+    myfile << "\\\\First Set of Constraint Set 6.18 " << endl;
 
     i = 1; //for the x coordinate of the board
     j = 1; //for the y coordinate of the board
