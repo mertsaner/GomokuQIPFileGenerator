@@ -1,4 +1,4 @@
-msaner@opt120:~/Schreibtisch/as/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX gomoku.qlp
+msaner@opt120:~/Schreibtisch/as2/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX gomoku.qlp
 Yasol
 gomoku.qlp
 InfoLevel is = 1
@@ -39,9 +39,10 @@ solve initial LP ...
 correction I
 finished initial LP. lp-val=-1811.4000000000005 sol.size=0 feas:4
 Warning: Initial LP not adequately solved.
-..... 131 ..... score: -2.305843009213694e+18 | time: 102 |  dual: 1 gap=100%
-..... 173 ..... score: -2.305843009213694e+18 | time: 132 |  dual: 1 gap=100%
-..... 101 ..... score: -2.305843009213694e+18 | time: 162 |  dual: 1 gap=100%
-..... 275 ..... score: -2.305843009213694e+18 | time: 192 |  dual: 1 gap=100%
-..... 303 ..... score: -2.305843009213694e+18 | time: 222 |  dual: 1 gap=100%
-..... 39 ..... score: -2.305843009213694e+18 | time: 252 |  dual: 1 gap=100%
+..... 163 ..... score: -2.305843009213694e+18 | time: 100 |  dual: 1 gap=100%
+..... 209 ..... score: -2.305843009213694e+18 | time: 130 |  dual: 1 gap=100%
+..... 157 ..... score: -2.305843009213694e+18 | time: 160 |  dual: 1 gap=100%
+..... 319 ..... score: -2.305843009213694e+18 | time: 190 |  dual: 1 gap=100%
+..... 350 ..... score: -2.305843009213694e+18 | time: 220 |  dual: 1 gap=100%
+..... 211 ..... score: -2.305843009213694e+18 | time: 250 |  dual: 1 gap=100%
+..... 171 ..... score: -2.305843009213694e+18 | time: 280 |  dual: 1 gap=100%
