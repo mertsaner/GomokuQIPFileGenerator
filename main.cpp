@@ -3,6 +3,7 @@
 // Winning condition is 5 in a row
 // So Gomoku is 15,15,5 game
 // This program creates .qlp file of the Gomoku game for QIP Solver
+// Author Mert Saner
 #include <iostream>
 #include <fstream> //for writing to a file
 using namespace std;
