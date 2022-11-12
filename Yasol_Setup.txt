@@ -1,0 +1,9 @@
+ export YASOL_CPLEX_PATH=/home/mert/Cplexsetup/cplex
+
+export LD_LIBRARY_PATH=$YASOL_CLP_PATH/lib:$LD_LIBRARY_PATH
+===============================================================
+After installation to RUN the YASOL
+1. In the terminalEnter bin folder of the Yasol in the terminal using command
+$ cd Desktop/Yasol_3.9.9.3.1_Linux/bin
+
+2. $ ./Yasol_CPLEX ~/Desktop/qip_example.qlp
