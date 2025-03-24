@@ -1,0 +1,418 @@
+MINIMIZE
+
+-x1 -2x2 +2x3 +x4
+
+SUBJECT TO
+
+#Existential Constratins
+
+#First Constraint Set (36 Constraints)
+
+E_Constraint1: B1_1_2 + A1_1_3 <= 1  #for each k value one constraints  #k=3
+
+E_Constraint2: B1_1_4 + A1_1_5 <= 1  #k=5
+
+E_Constraint3: B1_1_6 + A1_1_7 <= 1  #k=7
+
+E_Constraint4: B1_1_8 + A1_1_9 <= 1  #k=9
+
+
+E_Constraint4: B1_2_2 + A1_2_3 <= 1  #for each k value one constraints
+
+E_Constraint5: B1_2_4 + A1_2_5 <= 1
+
+E_Constraint7: B1_2_6 + A1_2_7 <= 1
+
+E_Constraint8: B1_2_8 + A1_2_9 <= 1
+
+
+E_Constraint9: B1_3_2 + A1_3_3 <= 1  #for each k value one constraints
+
+E_Constraint10: B1_3_4 + A1_3_5 <= 1
+
+E_Constraint11: B1_3_6 + A1_3_7 <= 1
+
+E_Constraint12: B1_3_8 + A1_3_9 <= 1
+
+
+E_Constraint13: B2_1_2 + A2_1_3 <= 1  #for each k value one constraints
+
+E_Constraint14: B2_1_4 + A2_1_5 <= 1
+
+E_Constraint15: B2_1_6 + A2_1_7 <= 1
+
+E_Constraint16: B2_1_8 + A2_1_9 <= 1
+
+
+E_Constraint17: B2_2_2 + A2_2_3 <= 1  #for each k value one constraints
+
+E_Constraint18: B2_2_4 + A2_2_5 <= 1
+
+E_Constraint19: B2_2_6 + A2_2_7 <= 1
+
+E_Constraint20: B2_2_8 + A2_2_9 <= 1
+
+
+E_Constraint21: B2_3_2 + A2_3_3 <= 1  #for each k value one constraints
+
+E_Constraint22: B2_3_4 + A2_3_5 <= 1
+
+E_Constraint23: B2_3_6 + A2_3_7 <= 1
+
+E_Constraint24: B2_3_8 + A2_3_9 <= 1
+
+
+E_Constraint25: B3_1_2 + A2_1_3 <= 1  #for each k value one constraints
+
+E_Constraint26: B3_1_4 + A2_1_5 <= 1
+
+E_Constraint27: B3_1_6 + A1_3_7 <= 1
+
+E_Constraint28: B3_1_8 + A1_3_9 <= 1
+
+
+E_Constraint29: B3_2_2 + A3_2_3 <= 1  #for each k value one constraints
+
+E_Constraint30: B3_2_4 + A3_2_5 <= 1
+
+E_Constraint31: B3_2_6 + A3_2_7 <= 1
+
+E_Constraint32: B3_2_8 + A3_2_9 <= 1
+
+
+E_Constraint33: B3_3_2 + A3_3_3 <= 1  #for each k value one constraints
+
+E_Constraint34: B3_3_4 + A3_3_5 <= 1
+
+E_Constraint35: B3_3_6 + A3_3_7 <= 1
+
+E_Constraint36: B3_3_8 + A3_3_9 <= 1
+
+
+
+#Second Contraint Set of Existential Player (36 Constraints)
+
+
+
+E_Constraint37: A1_1_1 + A1_1_3 <= 0
+
+E_Constraint38: A1_1_3 + A1_1_5 <= 0
+
+E_Constraint39: A1_1_5 + A1_1_7 <= 0
+
+E_Constraint40: A1_1_7 + A1_1_9 <= 0
+
+
+E_Constraint41: A1_2_1 + A1_2_3 <= 0
+
+E_Constraint42: A1_2_3 + A1_2_5 <= 0
+
+E_Constraint43: A1_2_5 + A1_2_7 <= 0
+
+E_Constraint44: A1_2_7 + A1_2_9 <= 0
+
+
+E_Constraint45: A1_3_1 + A1_3_3 <= 0
+
+E_Constraint46: A1_3_3 + A1_3_5 <= 0
+
+E_Constraint47: A1_3_5 + A1_3_7 <= 0
+
+E_Constraint48: A1_3_7 + A1_3_9 <= 0
+
+
+E_Constraint49: A2_1_1 + A2_1_3 <= 0
+
+E_Constraint50: A2_1_3 + A2_1_5 <= 0
+
+E_Constraint51: A2_1_5 + A2_1_7 <= 0
+
+E_Constraint52: A2_1_7 + A2_1_9 <= 0
+
+
+E_Constraint53: A2_2_1 + A2_2_3 <= 0
+
+E_Constraint54: A2_2_3 + A2_2_5 <= 0
+
+E_Constraint55: A2_2_5 + A2_2_7 <= 0
+
+E_Constraint56: A2_2_7 + A2_2_9 <= 0
+
+
+E_Constraint57: A2_3_1 + A2_3_3 <= 0
+
+E_Constraint58: A2_3_3 + A2_3_5 <= 0
+
+E_Constraint59: A2_3_5 + A2_3_7 <= 0
+
+E_Constraint60: A2_3_7 + A2_3_9 <= 0
+
+
+E_Constraint61: A3_1_1 + A3_1_3 <= 0
+
+E_Constraint62: A3_1_3 + A3_1_5 <= 0
+
+E_Constraint63: A3_1_5 + A3_1_7 <= 0
+
+E_Constraint64: A3_1_7 + A3_1_9 <= 0
+
+
+E_Constraint65: A3_2_1 + A3_2_3 <= 0
+
+E_Constraint66: A3_2_3 + A3_2_5 <= 0
+
+E_Constraint67: A3_2_5 + A3_2_7 <= 0
+
+E_Constraint68: A3_2_7 + A3_2_9 <= 0
+
+
+E_Constraint69: A3_3_1 + A3_3_3 <= 0
+
+E_Constraint70: A3_3_3 + A3_3_5 <= 0
+
+E_Constraint71: A3_3_5 + A3_3_7 <= 0
+
+E_Constraint72: A3_3_7 + A3_3_9 <= 0
+
+
+#Third Constraint Set Ai_j_k
+
+
+E_Constraint72: A1_1_1+ A1_2_1+ A1_3_1+ A2_1_1 + A2_2_1+ A2_3_1+ A3_1_1+ A3_2_1 + A3_3_1 = 1/2+1
+
+E_Constraint73: A1_1_1+ A1_2_1+ A1_3_1+ A2_1_1 + A2_2_1+ A2_3_1+ A3_1_1+ A3_2_1 + A3_3_1 = 3/2+1
+
+E_Constraint74: A1_1_1+ A1_2_1+ A1_3_1+ A2_1_1 + A2_2_1+ A2_3_1+ A3_1_1+ A3_2_1 + A3_3_1 = 5/2+1
+
+E_Constraint75: A1_1_1+ A1_2_1+ A1_3_1+ A2_1_1 + A2_2_1+ A2_3_1+ A3_1_1+ A3_2_1 + A3_3_1 = 7/2+1
+
+E_Constraint76: A1_1_1+ A1_2_1+ A1_3_1+ A2_1_1 + A2_2_1+ A2_3_1+ A3_1_1+ A3_2_1 + A3_3_1 = 9/2+1
+
+
+#Universal Constratins 
+
+#First Contraints Set (36 Constraints)
+
+U_Constraint1: A1_1_1 + B1_1_2 <= 1
+
+U_Constraint2: A1_1_3 + B1_1_4 <= 1
+
+U_Constraint3: A1_1_5 + B1_1_6 <= 1
+
+U_Constraint4: A1_1_7 + B1_1_8 <= 1
+
+
+U_Constraint5: A1_2_1 + B1_2_2 <= 1
+
+U_Constraint6: A1_2_3 + B1_2_4 <= 1
+
+U_Constraint7: A1_2_5 + B1_2_6 <= 1
+
+U_Constraint8: A1_2_7 + B1_2_8 <= 1
+
+
+U_Constraint9: A1_3_1 + B1_3_2 <= 1
+
+U_Constraint10: A1_3_3 + B1_3_4 <= 1
+
+U_Constraint11: A1_3_5 + B1_3_6 <= 1
+
+U_Constraint12: A1_3_7 + B1_3_8 <= 1
+
+
+
+
+U_Constraint13: A2_1_1 + B2_1_2 <= 1
+
+U_Constraint14: A2_1_3 + B2_1_4 <= 1
+
+U_Constraint15: A2_1_5 + B2_1_6 <= 1
+
+U_Constraint16: A2_1_7 + B2_1_8 <= 1
+
+
+U_Constraint17: A2_2_1 + B2_2_2 <= 1
+
+U_Constraint18: A2_2_3 + B2_2_4 <= 1
+
+U_Constraint19: A2_2_5 + B2_2_6 <= 1
+
+U_Constraint20: A2_2_7 + B2_2_8 <= 1
+
+
+U_Constraint21: A2_3_1 + B2_3_2 <= 1
+
+U_Constraint22: A2_3_3 + B2_3_4 <= 1
+
+U_Constraint23: A2_3_5 + B2_3_6 <= 1
+
+U_Constraint24: A2_3_7 + B2_3_8 <= 1
+
+
+
+
+U_Constraint25: A3_1_1 + B3_1_2 <= 1
+
+U_Constraint26: A3_1_3 + B3_1_4 <= 1
+
+U_Constraint27: A3_1_5 + B3_1_6 <= 1
+
+U_Constraint28: A3_1_7 + B3_1_8 <= 1
+
+
+U_Constraint29: A3_2_1 + B3_2_2 <= 1
+
+U_Constraint30: A3_2_3 + B3_2_4 <= 1
+
+U_Constraint31: A3_2_5 + B3_2_6 <= 1
+
+U_Constraint32: A3_2_7 + B3_2_8 <= 1
+
+
+U_Constraint33: A3_3_1 + B3_3_2 <= 1
+
+U_Constraint34: A3_3_3 + B3_3_4 <= 1
+
+U_Constraint35: A3_3_5 + B3_3_6 <= 1
+
+U_Constraint36: A3_3_7 + B3_3_8 <= 1
+
+
+
+#Second Universal Constraint Set (27 Constraints)
+
+
+U_Constraint37: B1_1_2 - B1_1_4 <= 0
+
+U_Constraint38: B1_1_4 - B1_1_6 <= 0
+
+U_Constraint39: B1_1_6 - B1_1_8 <= 0
+
+
+U_Constraint40: B1_2_2 - B1_2_4 <= 0
+
+U_Constraint41: B1_2_4 - B1_2_6 <= 0
+
+U_Constraint42: B1_2_6 - B1_2_8 <= 0
+
+
+U_Constraint43: B1_3_2 - B1_3_4 <= 0
+
+U_Constraint44: B1_3_4 - B1_3_6 <= 0
+
+U_Constraint45: B1_3_6 - B1_3_8 <= 0
+
+
+
+U_Constraint46: B2_1_2 - B2_1_4 <= 0
+
+U_Constraint47: B2_1_4 - B2_1_6 <= 0
+
+U_Constraint48: B2_1_6 - B2_1_8 <= 0
+
+
+U_Constraint49: B2_2_2 - B2_2_4 <= 0
+
+U_Constraint50: B2_2_4 - B2_2_6 <= 0
+
+U_Constraint51: B2_2_6 - B2_2_8 <= 0
+
+
+U_Constraint52: B2_3_2 - B2_3_4 <= 0
+
+U_Constraint53: B2_3_4 - B2_3_6 <= 0
+
+U_Constraint54: B2_3_6 - B2_3_8 <= 0
+
+
+
+U_Constraint55: B3_1_2 - B3_1_4 <= 0
+
+U_Constraint56: B3_1_4 - B3_1_6 <= 0
+
+U_Constraint57: B3_1_6 - B3_1_8 <= 0
+
+
+U_Constraint58: B3_2_2 - B3_2_4 <= 0
+
+U_Constraint59: B3_2_4 - B3_2_6 <= 0
+
+U_Constraint60: B3_2_6 - B3_2_8 <= 0
+
+
+U_Constraint61: B3_3_2 - B3_3_4 <= 0
+
+U_Constraint62: B3_3_4 - B3_3_6 <= 0
+
+U_Constraint63: B3_3_6 - B3_3_8 <= 0
+
+
+#Third Constraint Set
+
+
+U_Constraint64: B1_1_2 + B1_2_2 + B1_3_2 + B2_1_2 + B2_2_2 + B2_3_2 + B3_1_2 + B3_2_2 + B3_3_2=1
+
+U_Constraint72: B1_1_2 + B1_2_2 + B1_3_2 + B2_1_2 + B2_2_2 + B2_3_2 + B3_1_2 + B3_2_2 + B3_3_2=1
+
+
+
+E_Constraint36: A1_1_1 + A1_1_3 <= 0
+E_Constraint36: A1_1_1 + A1_1_3 <= 0
+
+E_Constraint36: A1_1_1 + A1_1_3 <= 0
+
+E_Constraint36: A1_1_1 + A1_1_3 <= 0
+
+E_Constraint36: A1_1_1 + A1_1_3 <= 0
+
+E_Constraint36: A1_1_1 + A1_1_3 <= 0
+
+
+
+
+
+
+
+
+
+
+#Universal Constratins
+
+U_Constraint1: B1_1_2 + A1_1_3 <= 1
+
+U_Constraint2: A1_1_1 + A1_1_3 <= 0
+
+
+B is universal
+A and C are existental
+
+BOUNDS
+
+0 <= A1_1_1 <= 1
+
+45 times for A
+
+45 times for C #chechs whethers it is over #6.20
+
+36 times for B
+
+BINARIES
+
+45 times for A
+45 times for C
+36 times for B
+x1 x2 x3 x4
+
+EXISTS
+
+x1 x2 x4
+
+ALL
+
+x3
+
+ORDER
+
+x1 x2 x3 x4
+
+END

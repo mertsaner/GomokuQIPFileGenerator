@@ -1,0 +1,646 @@
+mert@mert-Dell-G15-5510:~$ sudo apt install gdebi
+[sudo] password for mert: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.4.0-84-generic
+  linux-hwe-5.4-headers-5.4.0-84 linux-image-5.4.0-84-generic
+  linux-modules-5.4.0-84-generic
+  linux-modules-extra-5.4.0-84-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  gdebi-core gnome-icon-theme libgtk2-perl libpango-perl
+Suggested packages:
+  libgtk2-perl-doc
+The following NEW packages will be installed:
+  gdebi gdebi-core gnome-icon-theme libgtk2-perl
+  libpango-perl
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 10.5 MB of archives.
+After this operation, 20.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://it.archive.ubuntu.com/ubuntu bionic/universe amd64 gdebi-core all 0.9.5.7+nmu2 [116 kB]
+Get:2 http://it.archive.ubuntu.com/ubuntu bionic/universe amd64 gnome-icon-theme all 3.12.0-3 [9,620 kB]
+Get:3 http://it.archive.ubuntu.com/ubuntu bionic/universe amd64 gdebi all 0.9.5.7+nmu2 [23.7 kB]
+Get:4 http://it.archive.ubuntu.com/ubuntu bionic/universe amd64 libpango-perl amd64 1.227-2build1 [157 kB]
+Get:5 http://it.archive.ubuntu.com/ubuntu bionic/universe amd64 libgtk2-perl amd64 2:1.24992-1build1 [544 kB]
+Fetched 10.5 MB in 9s (1,169 kB/s)    
+Selecting previously unselected package gdebi-core.
+(Reading database ... 231934 files and directories currently installed.)
+Preparing to unpack .../gdebi-core_0.9.5.7+nmu2_all.deb ...
+Unpacking gdebi-core (0.9.5.7+nmu2) ...
+Selecting previously unselected package gnome-icon-theme.
+Preparing to unpack .../gnome-icon-theme_3.12.0-3_all.deb ...
+Unpacking gnome-icon-theme (3.12.0-3) ...
+Selecting previously unselected package gdebi.
+Preparing to unpack .../gdebi_0.9.5.7+nmu2_all.deb ...
+Unpacking gdebi (0.9.5.7+nmu2) ...
+Selecting previously unselected package libpango-perl.
+Preparing to unpack .../libpango-perl_1.227-2build1_amd64.deb ...
+Unpacking libpango-perl (1.227-2build1) ...
+Selecting previously unselected package libgtk2-perl.
+Preparing to unpack .../libgtk2-perl_2%3a1.24992-1build1_amd64.deb ...
+Unpacking libgtk2-perl (2:1.24992-1build1) ...
+Setting up gdebi-core (0.9.5.7+nmu2) ...
+Setting up gnome-icon-theme (3.12.0-3) ...
+update-alternatives: using /usr/share/icons/gnome/scalable/places/debian-swirl.svg to provide /usr/share/icons/gnome/scalable/places/start-here.svg (start-here.svg) in auto mode
+Setting up libpango-perl (1.227-2build1) ...
+Setting up gdebi (0.9.5.7+nmu2) ...
+Setting up libgtk2-perl (2:1.24992-1build1) ...
+Processing triggers for desktop-file-utils (0.23-1ubuntu3.18.04.2) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for gnome-menus (3.13.3-11ubuntu1.1) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+mert@mert-Dell-G15-5510:~$ su - 
+Password: 
+su: Authentication failure
+mert@mert-Dell-G15-5510:~$ su - 
+Password: 
+su: Authentication failure
+mert@mert-Dell-G15-5510:~$ sudo apt install ./zoom_amd64.deb
+Reading package lists... Done
+E: Unsupported file ./zoom_amd64.deb given on commandline
+mert@mert-Dell-G15-5510:~$ sudo apt install gdebi
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+gdebi is already the newest version (0.9.5.7+nmu2).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.4.0-84-generic
+  linux-hwe-5.4-headers-5.4.0-84 linux-image-5.4.0-84-generic
+  linux-modules-5.4.0-84-generic
+  linux-modules-extra-5.4.0-84-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+mert@mert-Dell-G15-5510:~$ sudo apt install gdebi
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+gdebi is already the newest version (0.9.5.7+nmu2).
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.4.0-84-generic
+  linux-hwe-5.4-headers-5.4.0-84 linux-image-5.4.0-84-generic
+  linux-modules-5.4.0-84-generic
+  linux-modules-extra-5.4.0-84-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+mert@mert-Dell-G15-5510:~$  export YASOL_CPLEX_PATH=/home/mert/Cplexsetup/cplex
+mert@mert-Dell-G15-5510:~$ ls
+cmake-3.21.4         Downloads         gurobi.log  Templates
+cmake-3.21.4.tar.gz  examples.desktop  Music       Videos
+Cplexsetup           gurobi911         Pictures
+Desktop              gurobi_key.odt    Public
+Documents            gurobi.lic        snap
+mert@mert-Dell-G15-5510:~$ ls
+cmake-3.21.4         Downloads         gurobi.log  Templates
+cmake-3.21.4.tar.gz  examples.desktop  Music       Videos
+Cplexsetup           gurobi911         Pictures
+Desktop              gurobi_key.odt    Public
+Documents            gurobi.lic        snap
+mert@mert-Dell-G15-5510:~$ cd
+mert@mert-Dell-G15-5510:~$ cd Desktop
+mert@mert-Dell-G15-5510:~/Desktop$ ls
+'First Steps Linux.odt'      'Setup Files'
+ gurobi9.1.1_linux64.tar.gz   Yasol_3.9.9.3.1_Linux
+ qip_example.qlp             'Yasol Setup'
+mert@mert-Dell-G15-5510:~/Desktop$ cd Yasol_3.9.9.3.1_Linux/
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux$ ls
+bin            build_CPLEX.bat  mctsClass  README  Yasol
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux$ ./build_CPLEX.bat
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/ExternCode/QLPReader.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/Parser.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/QlpRelaxer.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/QlpStageRelaxer.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/Log.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/QlpConverter.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/QlpSplitter.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Utilities/QlpStageSolver.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/MemoryManagement/MemoryManager.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/ExternSolvers/QpExtSolCplexC.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/ExternSolvers/QpExtSolCplexC.cpp:61:4: warning: '~QpExtSolCplexC' has a non-throwing exception specification but can still throw [-Wexceptions]
+                        throw utils::ExternSolverException("Exception caught freeing CPLEX model. Error Code: " + utils::ToolBox::convertToStrin...
+                        ^
+src/ExternSolvers/QpExtSolCplexC.cpp:58:17: note: destructor has a implicit non-throwing exception specification
+QpExtSolCplexC::~QpExtSolCplexC() {
+                ^
+1 warning generated.
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/numbers/QpDouble.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/numbers/QpRational.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/qlp/Constraint.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/qlp/Qlp.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/qlp/QlpMatCoeff.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/components/QpObjFunc.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/components/QpRhs.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Datastructures/components/QpVar.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Algorithms/qlp2lp/Qlp2Lp.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Algorithms/nd/NbdStageSolver.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src_ll -I./src -I../Solver/include  -I/home/mert/Cplexsetup/cplex/include -O4 -g -DLINUX -static -std=c++0x -fPIC -Wno-deprecated-register -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C src/Algorithms/nd/NbdMaster.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/ar -rcs Solver_cplex.a *.o
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/QBPSolver.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/QBPSolver.cpp:28:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/QBPSolver_tl.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/QBPSolver_tl.cpp:26:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+src/QBPSolver_tl.cpp:74:54: warning: backslash and newline separated by space [-Wbackslash-newline-escape]
+#define DELETE_CUTS(d)                              \  
+                                                     ^
+src/QBPSolver_tl.cpp:1211:153: warning: '&&' within '||' [-Wlogical-op-parentheses]
+  ...|| (((!inSB || loops < 2/*10*/ || dualHasDecreased) && (dualHasDecreased || moreThanX < 4)) || (solution.size() < nVars())) && (status == algorithm::Algorithm::FEASIBLE || (solution.size()<nVars()&&status != algorithm::Algorithm::FEASIBLE))...
+     ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/QBPSolver_tl.cpp:1211:153: note: place parentheses around the '&&' expression to silence this warning
+  ...(((!inSB || loops < 2/*10*/ || dualHasDecreased) && (dualHasDecreased || moreThanX < 4)) || (solution.size() < nVars())) && (status == algorithm::Algorithm::FEASIBLE || (solution.size()<nVars()&&status != algorithm::Algorithm::FEASIBLE)) ...
+                                                                                                                              ^
+     (                                                                                                                                                                                                                                            )
+src/QBPSolver_tl.cpp:1783:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+         } else {
+           ^
+src/QBPSolver_tl.cpp:1795:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+         } else {
+           ^
+src/QBPSolver_tl.cpp:2652:20: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+           progressOutput("*+++*", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                          ^
+src/QBPSolver_tl.cpp:2710:22: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+      progressOutput(".....", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                     ^
+src/QBPSolver_tl.cpp:2837:25: warning: '&&' within '||' [-Wlogical-op-parentheses]
+          (eas[pdvar] == EXIST && constraintallocator[constraints[0]].header.wtch2.worst-objOffset > stageValue[bopd] ||
+           ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+src/QBPSolver_tl.cpp:2837:25: note: place parentheses around the '&&' expression to silence this warning
+          (eas[pdvar] == EXIST && constraintallocator[constraints[0]].header.wtch2.worst-objOffset > stageValue[bopd] ||
+                               ^
+           (                                                                                                         )
+src/QBPSolver_tl.cpp:2838:24: warning: '&&' within '||' [-Wlogical-op-parentheses]
+           eas[pdvar] == UNIV && constraintallocator[constraints[0]].header.wtch2.worst-objOffset < stageValue[bopd] ) 
+           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/QBPSolver_tl.cpp:2838:24: note: place parentheses around the '&&' expression to silence this warning
+           eas[pdvar] == UNIV && constraintallocator[constraints[0]].header.wtch2.worst-objOffset < stageValue[bopd] ) 
+                              ^
+           (                                                                                                        )
+src/QBPSolver_tl.cpp:3031:29: warning: '&&' within '||' [-Wlogical-op-parentheses]
+              (eas[pdvar] == EXIST && constraintallocator[constraints[0]].header.wtch2.worst-objOffset > stageValue[bopd] ||
+               ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+src/QBPSolver_tl.cpp:3031:29: note: place parentheses around the '&&' expression to silence this warning
+              (eas[pdvar] == EXIST && constraintallocator[constraints[0]].header.wtch2.worst-objOffset > stageValue[bopd] ||
+                                   ^
+               (                                                                                                         )
+src/QBPSolver_tl.cpp:3032:28: warning: '&&' within '||' [-Wlogical-op-parentheses]
+               eas[pdvar] == UNIV && constraintallocator[constraints[0]].header.wtch2.worst-objOffset < stageValue[bopd] ) 
+               ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/QBPSolver_tl.cpp:3032:28: note: place parentheses around the '&&' expression to silence this warning
+               eas[pdvar] == UNIV && constraintallocator[constraints[0]].header.wtch2.worst-objOffset < stageValue[bopd] ) 
+                                  ^
+               (                                                                                                        )
+src/QBPSolver_tl.cpp:3687:23: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+              progressOutput("++++m", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                             ^
+src/QBPSolver_tl.cpp:4095:24: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                      progressOutput("++++z", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                     ^
+src/QBPSolver_tl.cpp:4136:87: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                    if (fabs(local_ub - value) <= 1e-9 || (value >= b && irand(random_seed,4) != 2) && block[Lpick] >= 5) {
+                                                       ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+src/QBPSolver_tl.cpp:4136:87: note: place parentheses around the '&&' expression to silence this warning
+                    if (fabs(local_ub - value) <= 1e-9 || (value >= b && irand(random_seed,4) != 2) && block[Lpick] >= 5) {
+                                                                                                    ^
+                                                          (                                                             )
+src/QBPSolver_tl.cpp:5129:18: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                progressOutput("-----", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                               ^
+src/QBPSolver_tl.cpp:5321:23: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                            progressOutput("++fis", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                           ^
+src/QBPSolver_tl.cpp:6611:8: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+              else if (info_level >= -6) cerr << "|  Root-LP:" << -lb.asDouble();
+              ^
+src/QBPSolver_tl.cpp:6708:22: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                    progressOutput("++++i", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                   ^
+src/QBPSolver_tl.cpp:7281:19: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                        progressOutput("++++p", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                       ^
+src/QBPSolver_tl.cpp:7704:24: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                      progressOutput("++++x", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                     ^
+src/QBPSolver_tl.cpp:8038:20: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                                progressOutput("++++y", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                               ^
+src/QBPSolver_tl.cpp:8079:95: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                              if(0)if (fabs(local_ub - value) <= 1e-9 || (value >= b && irand(random_seed,4) != 2) && block[Lpick] >= 5) {
+                                                                      ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+src/QBPSolver_tl.cpp:8079:95: note: place parentheses around the '&&' expression to silence this warning
+                              if(0)if (fabs(local_ub - value) <= 1e-9 || (value >= b && irand(random_seed,4) != 2) && block[Lpick] >= 5) {
+                                                                                                                   ^
+                                                                         (                                                             )
+src/QBPSolver_tl.cpp:8216:19: warning: '/*' within block comment [-Wcomment]
+                                                                                                      /*(jjj < ( getForecastReliability() >= 10 ...
+                                                                                                      ^
+src/QBPSolver_tl.cpp:8391:15: warning: '&&' within '||' [-Wlogical-op-parentheses]
+  ...0&&(decisionLevel() > (num_props < 200*num_decs ? 2*sqrt((double)binVars()) : num_decs*200.0*sqrt((double)binVars()) / ((double)num_props)) && sfather_ix > 2 && block[Lpick] > 1 ) ||...
+     ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+src/QBPSolver_tl.cpp:8391:15: note: place parentheses around the '&&' expression to silence this warning
+  ...0&&(decisionLevel() > (num_props < 200*num_decs ? 2*sqrt((double)binVars()) : num_decs*200.0*sqrt((double)binVars()) / ((double)num_props)) && sfather_ix > 2 && block[Lpick] > 1 ) ...
+      ^
+     (                                                                                                                                                                                  )
+src/QBPSolver_tl.cpp:10660:25: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                              progressOutput("++++vM", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                             ^
+src/QBPSolver_tl.cpp:10941:21: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                          progressOutput("++++v", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                         ^
+src/QBPSolver_tl.cpp:11020:25: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                              progressOutput("++++vz", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                             ^
+src/QBPSolver_tl.cpp:11279:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else 
+        ^
+src/QBPSolver_tl.cpp:13043:24: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                      progressOutput("+++++", global_score, global_dual_bound, !LimHorSrch, objInverted,sfather_ix);
+                                     ^
+src/QBPSolver_tl.cpp:13670:28: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+      C.mefprint(processNo,"get Message with TAG %d\n",status.MPI_TAG);
+                           ^
+src/QBPSolver_tl.cpp:13809:46: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        if (propQ.size() > 0) C.mefprint(processNo, "CpropQ not empty!!\n");
+                                                    ^
+src/QBPSolver_tl.cpp:14422:24: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                C.mefprint(processNo,"T:%d V:%d | ", trail[iiii], (int)assigns[trail[iiii]]);
+                                     ^
+src/QBPSolver_tl.cpp:14424:29: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+              C.mefprint(processNo,"\n");
+                                   ^
+src/QBPSolver_tl.cpp:15297:26: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    C.mefprint(processNo,"sent Message with TAG %d\n",FINISH);
+                         ^
+src/QBPSolver_tl.cpp:15300:23: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        C.mefprint(processNo," %.1f", forecast(i));
+                             ^
+src/QBPSolver_tl.cpp:15303:26: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    C.mefprint(processNo,"\n");
+                         ^
+36 warnings generated.
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/QBPSolver_ctrl.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/QBPSolver_ctrl.cpp:26:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+src/QBPSolver_ctrl.cpp:788:24: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                C.mefprint(processNo,"T:%d V:%d | ", trail[iiii], (int)assigns[trail[iiii]]);
+                                     ^
+src/QBPSolver_ctrl.cpp:790:29: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+              C.mefprint(processNo,"\n");
+                                   ^
+src/QBPSolver_ctrl.cpp:1717:28: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+      C.mefprint(processNo,"sent Message with TAG %d\n",FINISH);
+                           ^
+src/QBPSolver_ctrl.cpp:1725:40: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+      if (i == 0) C.mefprint(processNo,"%s\n",(eas[0] == UNIV ? "UNIV" : "EXIST")); 
+                                       ^
+src/QBPSolver_ctrl.cpp:1727:23: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        C.mefprint(processNo,"\n%s\n",(eas[i] == UNIV ? "UNIV" : "EXIST")); 
+                             ^
+src/QBPSolver_ctrl.cpp:1731:23: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        C.mefprint(processNo," [ \"%s\"=%.0f | %.0f | %.2f ] ** ",name.c_str(),PV[1][i],fstStSol[i], forecast(i));
+                             ^
+src/QBPSolver_ctrl.cpp:1733:23: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        C.mefprint(processNo," [ \"%s\"=%.0f | -%d- ] ** ",name.c_str(),PV[1][i],block[i]);
+                             ^
+src/QBPSolver_ctrl.cpp:1735:93: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+      if (j % 5 == 4 && !(i+1 >= nVars()) && !(block[i+1] > block[i])) C.mefprint(processNo,"\n");
+                                                                                            ^
+src/QBPSolver_ctrl.cpp:1737:26: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    C.mefprint(processNo,"\n");
+                         ^
+src/QBPSolver_ctrl.cpp:1747:26: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    C.mefprint(processNo,"FINAL PV VALUE IS %lf. Global score = %lf Objective=%lf\n",PVval,global_score,best_objective);
+                         ^
+src/QBPSolver_ctrl.cpp:1752:26: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    C.mefprint(processNo,"char pvsol[] = \"");
+                         ^
+src/QBPSolver_ctrl.cpp:1754:28: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+      C.mefprint(processNo,"%.0f",PV[1][i]);
+                           ^
+src/QBPSolver_ctrl.cpp:1756:26: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    C.mefprint(processNo,"\"\n");
+                         ^
+14 warnings generated.
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/QBPSolver_ml.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/QBPSolver_ml.cpp:25:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+src/QBPSolver_ml.cpp:2756:48: warning: for loop has empty body [-Wempty-body]
+    for (; j < c.size() && var(c[j]) != p; j++);
+                                               ^
+src/QBPSolver_ml.cpp:2756:48: note: put the semicolon on a separate line to silence this warning
+2 warnings generated.
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/cliques.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/cliques.cpp:25:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/commprint.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/commprint.cpp:90:17: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+  fprintf(file, test);
+                ^~~~
+src/commprint.cpp:90:17: note: treat the string as an argument to avoid this
+  fprintf(file, test);
+                ^
+                "%s", 
+1 warning generated.
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/resizer.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/resizer.cpp:1:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../Yasol/src  -O4 -g -DLINUX -std=c++11 -static -DCOMPILE_WITH_CPLEX_C -DUSE_CLPEX_C -DUSE_NBD_CPLEX_C -DNO_MPI -Wno-c++11-compat-deprecated-writable-strings src/QBPSolver_All.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/QBPSolver_All.cpp:24:21: warning: using directive refers to implicitly-defined namespace 'std'
+    using namespace std;
+                    ^
+src/QBPSolver_All.cpp:1886:123: warning: '/*' within block comment [-Wcomment]
+  .../*&& (std::find(VectorRMinus.begin(), VectorRMinus.end(), var(c[j])) == VectorRMinus.end()|| (OutAt[var(c[j])]<t/* && t!=VectorOfConstraints.siz...
+                                                                                                                     ^
+src/QBPSolver_All.cpp:1953:122: warning: '/*' within block comment [-Wcomment]
+  .../*&& (std::find(VectorRMinus.begin(), VectorRMinus.end(), var(c[j])) == VectorRMinus.end()|| (OutAt[var(c[j])]<t/* && t!=VectorOfConstraints.siz...
+                                                                                                                     ^
+src/QBPSolver_All.cpp:3673:23: warning: incrementing expression of type bool is deprecated and incompatible with C++17 [-Wdeprecated-increment-bool]
+                                                                                                                NumFound++;
+                                                                                                                ~~~~~~~~^
+src/QBPSolver_All.cpp:3712:23: warning: incrementing expression of type bool is deprecated and incompatible with C++17 [-Wdeprecated-increment-bool]
+                                                                                                                NumFound++;
+                                                                                                                ~~~~~~~~^
+5 warnings generated.
+/usr/bin/ar -rcs QBPSolver_cplex.a *.o
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../QBPSolver/src  -O4 -g -DLINUX -fmessage-length=0 -std=c++11 -Wno-deprecated-register  -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C -DNO_MPI src/CutAdder.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../QBPSolver/src  -O4 -g -DLINUX -fmessage-length=0 -std=c++11 -Wno-deprecated-register  -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C -DNO_MPI src/Yasol.cpp
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+/usr/bin/clang++ -c -I./src -I../Solver/include -I/home/mert/Cplexsetup/cplex/include -I../QBPSolver/src  -O4 -g -DLINUX -fmessage-length=0 -std=c++11 -Wno-deprecated-register  -DCOMPILE_WITH_CPLEX_C -DUSE_CPLEX_C -DUSE_NBD_CPLEX_C -DNO_MPI src/yInterface.cc
+clang: warning: -O4 is equivalent to -O3 [-Wdeprecated]
+src/yInterface.cc:25:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+/usr/bin/clang++ *.o -L -lLAPACK -static-libgcc -ldl ../Solver/Solver_cplex.a ../QBPSolver/QBPSolver_cplex.a /home/mert/Cplexsetup/cplex/lib/x86-64_linux/static_pic/libcplex.a -lpthread -lm -o Yasol_cplex
+-rw-rw-r-- 1 mert mert 20821570 Dec  2 11:27 ../QBPSolver/QBPSolver_cplex.a
+-rw-rw-r-- 1 mert mert 23936106 Dec  2 11:26 ../Solver/Solver_cplex.a
+ls: cannot access 'Debug/Yasol*': No such file or directory
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux$ cd ..
+mert@mert-Dell-G15-5510:~/Desktop$ ls
+'First Steps Linux.odt'       qip_example.qlp   Yasol_3.9.9.3.1_Linux
+ gurobi9.1.1_linux64.tar.gz  'Setup Files'     'Yasol Setup'
+mert@mert-Dell-G15-5510:~/Desktop$ cd Yasol_3.9.9.3.1_Linux/
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux$ ls
+bin  build_CLP.bat  build_CPLEX.bat  graphClass  mctsClass  QBPSolver  README  Solver  Yasol
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux$ cd Yasol/
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/Yasol$ ls
+CutAdder.o  Debug  makeYasol_CLP  makeYasol_CPLEX  src  Yasol.o  yInterface.o
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/Yasol$ cd Debug/
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/Yasol/Debug$ ls
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/Yasol/Debug$ cd ..
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/Yasol$ ls
+CutAdder.o  Debug  makeYasol_CLP  makeYasol_CPLEX  src  Yasol.o  yInterface.o
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/Yasol$ cd ..
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux$ ls
+bin  build_CLP.bat  build_CPLEX.bat  graphClass  mctsClass  QBPSolver  README  Solver  Yasol
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux$ cd bin
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ls
+logs  Yasol_CPLEX  Yasol.ini
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX 
+unknown
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX /home/Desktop/qip_example.qlp
+Yasol
+/home/Desktop/qip_example.qlp
+terminate called after throwing an instance of 'utils::ParserException'
+  what():  
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX ~/Desktop/Yasol_3.9.9.3.1_Linux/bin/qip_example.qlp
+Yasol
+/home/mert/Desktop/Yasol_3.9.9.3.1_Linux/bin/qip_example.qlp
+InfoLevel is = 1
+DO makeBinary
+QLP ready
+Hashtable ready
+Variables ready
+Blocks:3
+C-Blocks:3 Stages:1
+Objective ready
+Constraints ready
+Reading input finished
+Objective Shift = 0
+learnDualCuts=1
+useGMI=1
+useCover=1
+usePump=1
+useShadow=1
+useLazyLP=1
+useFarJumping=1
+useFastFix=0
+useImplications=1
+useLimitedLP=1
+useStrongBranching=1
+useEarlyBackjump=1
+useBestLevelExtraction=1
+useUniversalBackjump=1
+maxBaCLevel=1000000
+useAlphabeta=1
+useScout=0
+useMonotones=1
+isSimplyRestricted=1
+writeOutputFile=0
+maintainPv=1
+solve initial LP ...
+finished initial LP. lp-val=5 sol.size=4 feas:0
+Warning: data singularity in maintainPV.
+Warning: data singularity in maintainPV.
+*+++* 0 *+++* score: -2 | time: 0 |  dual: -5 gap=149.99999999249999%
+Warning: data singularity in maintainPV.
+objOffset=0
+Solution might be ok. I have no fast counter proof and it is muti-stage.
+Solution value might be correct.
+0 s2 s3 s3 
+RESULT: -2 : /home/mert/Desktop/Yasol_3.9.9.3.1_Linux/bin/qip_example.qlp
+NODES: 13, #RELAXATIONS:0, LEARNED: 4
+TIME: 0
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX ~/Desktop/Yasol_3.9.9.3.1_Linux/bin/qip_example.qlp
+Yasol
+/home/mert/Desktop/Yasol_3.9.9.3.1_Linux/bin/qip_example.qlp
+InfoLevel is = 1
+DO makeBinary
+QLP ready
+Hashtable ready
+Variables ready
+Blocks:3
+C-Blocks:3 Stages:1
+Objective ready
+Constraints ready
+Reading input finished
+Objective Shift = 0
+learnDualCuts=1
+useGMI=1
+useCover=1
+usePump=1
+useShadow=1
+useLazyLP=1
+useFarJumping=1
+useFastFix=0
+useImplications=1
+useLimitedLP=1
+useStrongBranching=1
+useEarlyBackjump=1
+useBestLevelExtraction=1
+useUniversalBackjump=1
+maxBaCLevel=1000000
+useAlphabeta=1
+useScout=0
+useMonotones=1
+isSimplyRestricted=1
+writeOutputFile=1
+maintainPv=1
+solve initial LP ...
+finished initial LP. lp-val=5 sol.size=4 feas:0
+Warning: data singularity in maintainPV.
+Warning: data singularity in maintainPV.
+*+++* 0 *+++* score: -2 | time: 0 |  dual: -5 gap=149.99999999249999%
+Warning: data singularity in maintainPV.
+objOffset=0
+Solution might be ok. I have no fast counter proof and it is muti-stage.
+Solution value might be correct.
+0 s2 s3 s3 
+RESULT: -2 : /home/mert/Desktop/Yasol_3.9.9.3.1_Linux/bin/qip_example.qlp
+NODES: 13, #RELAXATIONS:0, LEARNED: 4
+TIME: 0
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX second.qlp
+Yasol
+second.qlp
+InfoLevel is = 1
+DO makeBinary
+QLP ready
+Hashtable ready
+Variables ready
+Blocks:3
+C-Blocks:3 Stages:1
+Objective ready
+Found universal constraint.
+Constraints ready
+Reading input finished
+Objective Shift = 0
+learnDualCuts=1
+useGMI=1
+useCover=1
+usePump=1
+useShadow=1
+useLazyLP=1
+useFarJumping=1
+useFastFix=0
+useImplications=1
+useLimitedLP=1
+useStrongBranching=1
+useEarlyBackjump=1
+useBestLevelExtraction=1
+useUniversalBackjump=1
+maxBaCLevel=1000000
+useAlphabeta=1
+useScout=0
+useMonotones=1
+isSimplyRestricted=1
+writeOutputFile=1
+maintainPv=1
+solve initial LP ...
+finished initial LP. lp-val=3 sol.size=4 feas:0
++++++ 1 +++++ score: -3 | time: 0 |  dual: -3 gap=0%
+Minimum gap reached. bestO:-3 gdb:3.0000000010000001 bfo:1
+final score=3 final dual bound=3.0000000010000001
+NodeTypes: 0:16 1:2 2:0 3:0 4:0 5:0 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:0 16:0 17:0 18:0 19:0 
+PV value and objective are the same.
+solution file written to second.qlp.sol
+objOffset=0
+Solution might be ok. I have no fast counter proof and it is muti-stage.
+Solution value might be correct.
+1 1 s2 s3 
+RESULT: -3 : second.qlp
+NODES: 1, #RELAXATIONS:0, LEARNED: 0
+TIME: 0
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX second.qlp
+Yasol
+second.qlp
+InfoLevel is = 1
+DO makeBinary
+QLP ready
+Hashtable ready
+Variables ready
+Blocks:3
+C-Blocks:3 Stages:1
+Objective ready
+Found universal constraint.
+Constraints ready
+Reading input finished
+Objective Shift = 0
+learnDualCuts=1
+useGMI=1
+useCover=1
+usePump=1
+useShadow=1
+useLazyLP=1
+useFarJumping=1
+useFastFix=0
+useImplications=1
+useLimitedLP=1
+useStrongBranching=1
+useEarlyBackjump=1
+useBestLevelExtraction=1
+useUniversalBackjump=1
+maxBaCLevel=1000000
+useAlphabeta=1
+useScout=0
+useMonotones=1
+isSimplyRestricted=1
+writeOutputFile=1
+maintainPv=1
+solve initial LP ...
+finished initial LP. lp-val=3 sol.size=4 feas:0
++++++ 1 +++++ score: -3 | time: 0 |  dual: -3 gap=0%
+Minimum gap reached. bestO:-3 gdb:3.0000000010000001 bfo:1
+final score=3 final dual bound=3.0000000010000001
+NodeTypes: 0:16 1:2 2:0 3:0 4:0 5:0 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:0 16:0 17:0 18:0 19:0 
+PV value and objective are the same.
+solution file written to second.qlp.sol1
+objOffset=0
+Solution might be ok. I have no fast counter proof and it is muti-stage.
+Solution value might be correct.
+1 1 s2 s3 
+RESULT: -3 : second.qlp
+NODES: 1, #RELAXATIONS:0, LEARNED: 0
+TIME: 0
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ 
