@@ -1,9 +1,13 @@
- export YASOL_CPLEX_PATH=/home/mert/Cplexsetup/cplex
+YASOL Working Procedure
 
-export LD_LIBRARY_PATH=$YASOL_CLP_PATH/lib:$LD_LIBRARY_PATH
-===============================================================
+1. To Setup: $ export YASOL_CPLEX_PATH= /Applications/CPLEX_Studio_Beta211/cplex
+Or in Linux: $ export YASOL_CPLEX_PATH=/home/mert/Cplexsetup/cplex
+2. Enter the folder Yasol Installed and write $./build_CPLEX.bat 
+3. export LD_LIBRARY_PATH=$YASOL_CLP_PATH/lib:$LD_LIBRARY_PATH
+
 After installation to RUN the YASOL
-1. In the terminalEnter bin folder of the Yasol in the terminal using command
+In the terminal enter bin folder of the Yasol in the terminal using command
 $ cd Desktop/Yasol_3.9.9.3.1_Linux/bin
+$ ./Yasol_CPLEX ~/Desktop/qip_example.qlp
 
-2. $ ./Yasol_CPLEX ~/Desktop/qip_example.qlp
+To Run: enter Bin folder(in the Yasol solver) and write $ ./Yasol_CPLEX final.qlp (if .qlp file in the bin folder if not state the path of the file) for example $ ./Yasol_CPLEX ~/Desktop/Yasol_3.9.9.3.1_Linux/bin/qip_example.qlp
